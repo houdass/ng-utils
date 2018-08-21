@@ -1,0 +1,13 @@
+<div>
+  En Angular, on peut écrire dans toutes les propriétés du DOM via des attributs spéciaux sur les éléments HTML, entourés de crochets []. Ça fait bizarre au premier abord, mais en fait c’est du HTML valide. Un nom d’attribut HTML peut commencer par n’importe quoi, à l’exception de quelques caractères comme un guillemet ", une apostrophe ', un slash /, un égal =, un espace...
+  L’interpolation <span ngNonBindable>{{ user }}</span> est juste du sucre syntaxique pour l’écriture suivante :
+  <p>&lt;p [textContent]=&quot;user&quot;&gt;&lt;/p&gt;</p>
+  Le property binding s'utilise de la façon suivante:
+  <p>&lt;img [src] =&quot;user.imgUrl&quot; /&gt; ou &lt;img bind-src =&quot;user.imgUrl&quot; /&gt;</p>
+  On peut également l'utiliser pour les cas suivants:
+  <ul>
+    <li>Attribute Binding: &lt;td [attr.colspan]=&quot;clspn&quot;&gt; </li>
+    <li>Class Binding: &lt;span [class.active]=&quot;isActive&quot;&gt;...&lt;/span&gt;</li>
+    <li>Style Binding: &lt;p [style.background-color]=&quot;&apos;blue&apos;&quot;&gt;...&lt;/p&gt;</li>
+  </ul>
+</div>
