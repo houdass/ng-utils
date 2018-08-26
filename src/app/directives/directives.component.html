@@ -1,0 +1,23 @@
+<div>
+  Il existe trois types de directives dans Angular:
+  <ul>
+    <li>Composants-directives avec un template (Html).</li>
+    <li>Directives structurelles: Elles ont pour but de modifier la disposition du DOM en ajoutant et en supprimant des éléments DOM.</li>
+    <li>Directives d'attribut: Elles ont pour but de modifier l'apparence ou le comportement d'un élément, d'un composant ou d'une autre directive.</li>
+  </ul>
+</div>
+<div class="row jumbotron">
+  <div class="col-xs-5">
+    <ul>
+      <li><h4><a routerLink="structural" routerLinkActive="active">Les directives structurelles</a></h4></li>
+      <li><h4><a routerLink="attribute" routerLinkActive="active">Les attributes directives</a></h4></li>
+      <li><h4><a routerLink="element-ref" routerLinkActive="active">ElementRef</a></h4></li>
+      <li><h4><a routerLink="renderer" routerLinkActive="active">Renderer</a></h4></li>
+      <li><h4><a routerLink="hostbinding" routerLinkActive="active">@HostBinding</a></h4></li>
+      <li><h4><a routerLink="hostlistener" routerLinkActive="active">@HostListener</a></h4></li>
+    </ul>
+  </div>
+  <div class="col-xs-7">
+    <router-outlet></router-outlet>
+  </div>
+</div>

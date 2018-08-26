@@ -1,0 +1,22 @@
+Les directives structurelles : Elles ont pour but de modifier le DOM en ajoutant, enlevant ou replaçant un élément du DOM.
+<h3>*ngIf (avec un else)</h3>
+<p ngNonBindable>
+  &lt;p *ngIf=&quot;isVisible; else noCondition&quot;&gt;My message if true&lt;/p&gt;
+  <br>
+  &lt;ng-template #noCondition&gt;&lt;p&gt;My message if false&lt;p&gt;&lt;/ng-template&gt;
+</p>
+<h3>*ngIf (avec un else) - pour plus de consistance</h3>
+<p ngNonBindable>
+  &lt;p *ngIf=&quot;isVisible; then condition else noCondition&quot;&gt;&lt;/p&gt;
+  <br>
+  &lt;ng-template #condition&gt;&lt;p&gt;My message if true&lt;p&gt;&lt;/ng-template&gt;
+  <br>
+  &lt;ng-template #noCondition&gt;&lt;p&gt;My message if false&lt;p&gt;&lt;/ng-template&gt;
+</p>
+<h3>*ngFor (recupérer l'index)</h3>
+<p ngNonBindable>
+  &lt;p *ngFor=&quot;let item of items; let i = index&quot;&gt;{{ i }} - {{ item.name }}&lt;/p&gt;...
+  <br>
+  Ou bien, &lt;p *ngFor=&quot;let item of items; index as i&quot;&gt;{{ i }} - {{ item.name }}&lt;/p&gt;...
+</p>
+

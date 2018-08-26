@@ -1,0 +1,9 @@
+Les attribute directives: Elles ont pour but de modifier l'apparence ou le comportement d'un élément.
+
+<h3>NgClass</h3>
+<ul>
+  <li [ngClass]="'dodgerblue large'">Exemple ngClass via stringExp: [ngClass]="'dodgerblue large'"</li>
+  <li [ngClass]="['dodgerblue', 'italic']">Exemple ngClass via arrayExp: [ngClass]="['dodgerblue', 'italic']</li>
+  <li [ngClass]="{dodgerblue: true, large: true, italic: false}">Exemple ngClass via objExp</li>
+  <li [ngClass]="{'dodgerblue  large italic': true}">Exemple ngClass via stringExp (conditionnel)</li>
+</ul>
