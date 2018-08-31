@@ -5,8 +5,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../../environments/environment';
 import { FirebaseComponent } from './firebase.component';
-import {FirebaseService} from './firebase.service';
-import {FirebaseRoutingModule} from './firebase-routing.module';
+import { FirebaseService } from './firebase.service';
+import { FirebaseRoutingModule } from './firebase-routing.module';
 
 @NgModule({
   imports: [
@@ -19,4 +19,4 @@ import {FirebaseRoutingModule} from './firebase-routing.module';
   declarations: [FirebaseComponent],
   providers: [FirebaseService]
 })
-export class FirebaseModule { }
+export class FirebaseModule {}

@@ -1,0 +1,13 @@
+<div class="col-xs-12">
+  <ul>
+    <li><h4><a routerLink="route-one" routerLinkActive="active">Route One</a></h4></li>
+    <li><h4><a routerLink="route-two" routerLinkActive="active">Route Two</a></h4></li>
+  </ul>
+</div>
+<div class="col-xs-12" [@routerTransition]="getState(o)">
+  <router-outlet #o="outlet"></router-outlet>
+</div>
+<!--
+<button (click)="isVisible =! isVisible">Fade Toggle</button>
+<span @fade *ngIf="isVisible">Hello World</span>
+-->

@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { StructuralComponent } from './structural/structural.component';
 import { DirectivesRoutingModule } from './directives-routing.module';
 import { DirectivesComponent } from './directives.component';
@@ -12,9 +11,10 @@ import { HostbindingComponent } from './hostbinding/hostbinding.component';
 import { HostbindingHighlightDirective } from './hostbinding/hostbinding-highlight.directive';
 import { HostlistenerComponent } from './hostlistener/hostlistener.component';
 import { HostlistenerHighlightDirective } from './hostlistener/hostlistener-highlight.directive';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-  imports: [CommonModule, DirectivesRoutingModule],
+  imports: [DirectivesRoutingModule, SharedModule],
   declarations: [
     DirectivesComponent,
     StructuralComponent,

@@ -3,18 +3,7 @@
 <a routerLink="home/item" routerLinkActive="btn-info" class="btn">Go to home/item</a>
 
 <router-outlet></router-outlet>
-
-<form [formGroup]="form">
-  <input class="form-control"
-         (keyup.enter)="addTopic(topic)" #topic>
-  <ul class="list-group">
-    <li class="list-group-item"
-        (click)="removeTopic(i)"
-        *ngFor="let topic of topics.controls; index as i">
-      {{ topic.value }}
-    </li>
-  </ul>
-</form>-->
+-->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -29,7 +18,9 @@
         <li routerLink="directives" routerLinkActive="active"><a>Directives</a></li>
         <li routerLink="components" routerLinkActive="active"><a>Composants</a></li>
         <li routerLink="firebase" routerLinkActive="active"><a>Firebase</a></li>
-        <li class="dropdown" appDropdown>
+        <li routerLink="routing" routerLinkActive="active"><a>Routing</a></li>
+        <li routerLink="forms" routerLinkActive="active"><a>Forms</a></li>
+        <!--<li class="dropdown" appDropdown>
           <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a>Action</a></li>
@@ -40,9 +31,9 @@
             <li role="separator" class="divider"></li>
             <li><a>One more separated link</a></li>
           </ul>
-        </li>
+        </li>-->
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <!--<ul class="nav navbar-nav navbar-right">
         <li><a>Link</a></li>
         <li class="dropdown" appDropdown="">
           <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -54,9 +45,9 @@
             <li><a>Separated link</a></li>
           </ul>
         </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+      </ul>-->
+    </div>
+  </div>
 </nav>
 <div class="container">
   <div class="row">

@@ -5,16 +5,16 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ItemGuard implements CanActivate, CanActivateChild {
+export class ChildGuard implements CanActivate, CanActivateChild {
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<boolean> | Promise<boolean> | boolean {
-    console.log('ITEM GUARD');
+    console.log('CHILD GUARD');
     return new Promise(resolve => {
       setTimeout(() => {
         resolve(true);
-      }, 2000);
+      }, 300);
     });
   }
 

@@ -1,12 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { UtilService } from '../../shared/services/util.service';
 
 @Component({
   selector: 'app-attribute',
   templateUrl: './attribute.component.html',
   styleUrls: ['./attribute.component.scss']
 })
-export class AttributeComponent implements OnInit {
-  constructor() {}
+export class AttributeComponent {
+  stringExp: string;
+  arrayExp: string;
+  objExp: string;
+  stringExpConditional: string;
 
-  ngOnInit() {}
+  constructor(private utilService: UtilService) {
+    this.stringExp = this.utilService.generateHTML(`<span [ngClass]="'dodgerblue large'">Some text</span>`);
+    this.arrayExp = this.utilService.generateHTML(`<span [ngClass]="['dodgerblue', 'italic']">Some text</span>`);
+    this.objExp = this.utilService.generateHTML(
+      `<span [ngClass]="{dodgerblue: true, large: true, italic: false}">Some Text</span>`
+    );
+    this.objExp = this.utilService.generateHTML(`<span [ngClass]="{'dodgerblue large italic': true}">Some text</span>`);
+  }
 }

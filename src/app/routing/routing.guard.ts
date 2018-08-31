@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class HomeGuard implements CanLoad, CanActivate {
+export class RoutingGuard implements CanLoad, CanActivate {
   canLoad(route: Route): Observable<boolean> | Promise<boolean> | boolean {
     console.log('canLoad GUARD');
     return true;
@@ -16,6 +16,6 @@ export class HomeGuard implements CanLoad, CanActivate {
     state: RouterStateSnapshot
   ): Observable<boolean> | Promise<boolean> | boolean {
     console.log('CanActivate GUARD');
-    return false;
+    return true;
   }
 }
