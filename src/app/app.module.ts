@@ -13,11 +13,13 @@ import { DirectivesModule } from './directives/directives.module';
 import { FirebaseModule } from './firebase/firebase.module';
 import { RoutingModule } from './routing/routing.module';
 import { FormsModule } from './forms/forms.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, DropdownDirective],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     // DatabindingModule: Lazy loaded
     DirectivesModule,
@@ -25,6 +27,7 @@ import { FormsModule } from './forms/forms.module';
     FirebaseModule,
     RoutingModule,
     FormsModule,
+    // AnimationsModule: Lazy loaded
     WildcardRoutingModule
   ],
   providers: [],

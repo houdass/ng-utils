@@ -15,12 +15,12 @@ export class PropertyBindingComponent {
   styleBinding: string;
   styleBinding2: string;
   constructor(private utilService: UtilService) {
-    this.textContent = this.utilService.generateHTML('<p [textContent]=[name]></p>');
-    this.propertyBinding = this.utilService.generateHTML('<img [src]="user.imgUrl">');
-    this.propertyBindingWithBind = this.utilService.generateHTML('<img bind-src="user.imgUrl">');
-    this.attributBinding = this.utilService.generateHTML('<td [attr.colspan]="clspn">...</td>');
-    this.classBinding = this.utilService.generateHTML('<span [class.active]="isActive">...</span>');
-    this.styleBinding = this.utilService.generateHTML(`<p [style.background-color]="'blue'">...</p>`);
-    this.styleBinding2 = this.utilService.generateHTML(`<p [style.backgroundColor]="'blue'">...</p>`);
+    this.textContent = this.utilService.html('<p [textContent]=[name]></p>');
+    this.propertyBinding = this.utilService.html('<img [src]="user.imgUrl">');
+    this.propertyBindingWithBind = this.utilService.html('<img bind-src="user.imgUrl">');
+    this.attributBinding = this.utilService.html('<td [attr.colspan]="clspn">...</td>');
+    this.classBinding = this.utilService.html('<span [class.active]="isActive">...</span>');
+    this.styleBinding = this.utilService.html(`<p [style.background-color]="'blue'">...</p>`);
+    this.styleBinding2 = this.utilService.html(`<p [style.backgroundColor]="'blue'">...</p>`);
   }
 }

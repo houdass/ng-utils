@@ -13,11 +13,11 @@ export class AttributeComponent {
   stringExpConditional: string;
 
   constructor(private utilService: UtilService) {
-    this.stringExp = this.utilService.generateHTML(`<span [ngClass]="'dodgerblue large'">Some text</span>`);
-    this.arrayExp = this.utilService.generateHTML(`<span [ngClass]="['dodgerblue', 'italic']">Some text</span>`);
-    this.objExp = this.utilService.generateHTML(
+    this.stringExp = this.utilService.html(`<span [ngClass]="'dodgerblue large'">Some text</span>`);
+    this.arrayExp = this.utilService.html(`<span [ngClass]="['dodgerblue', 'italic']">Some text</span>`);
+    this.objExp = this.utilService.html(
       `<span [ngClass]="{dodgerblue: true, large: true, italic: false}">Some Text</span>`
     );
-    this.objExp = this.utilService.generateHTML(`<span [ngClass]="{'dodgerblue large italic': true}">Some text</span>`);
+    this.objExp = this.utilService.html(`<span [ngClass]="{'dodgerblue large italic': true}">Some text</span>`);
   }
 }

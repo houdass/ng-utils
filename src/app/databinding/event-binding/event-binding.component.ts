@@ -10,7 +10,7 @@ export class EventBindingComponent {
   eventBinding: string;
   eventBindingOn: string;
   constructor(private utilService: UtilService) {
-    this.eventBinding = this.utilService.generateHTML('<p (click)="callback()"></p>');
-    this.eventBindingOn = this.utilService.generateHTML('<p on-click="callback()"></p>');
+    this.eventBinding = this.utilService.html('<p (click)="callback()"></p>');
+    this.eventBindingOn = this.utilService.html('<p on-click="callback()"></p>');
   }
 }

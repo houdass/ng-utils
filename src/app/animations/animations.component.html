@@ -1,0 +1,23 @@
+<div>
+  <ul>
+    <li>Importer le module <b>BrowserAnimationsModule</b> (au niveau du root ou du core)
+      <markdown [data]="importAnimations"></markdown>
+    </li>
+    <li>Importer le <b>Polyfill des animations au niveau du fichier polyfills.ts</b>
+      <markdown [data]="polyfill"></markdown>
+    </li>
+    <li>Et lancer un coup de:
+      <markdown [data]="npm"></markdown>
+    </li>
+  </ul>
+</div>
+<div class="row jumbotron">
+  <div class="col-xs-5">
+    <ul>
+      <li><h4><a routerLink="trigger" routerLinkActive="active">Trigger</a></h4></li>
+    </ul>
+  </div>
+  <div class="col-xs-7">
+    <router-outlet></router-outlet>
+  </div>
+</div>

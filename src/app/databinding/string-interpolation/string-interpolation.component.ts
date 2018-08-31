@@ -10,6 +10,6 @@ export class StringInterpolationComponent {
   html: string;
 
   constructor(private utilService: UtilService) {
-    this.html = this.utilService.generateHTML('Bonjour {{ name }}');
+    this.html = this.utilService.html('Bonjour {{ name }}');
   }
 }

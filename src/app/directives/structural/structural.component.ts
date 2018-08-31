@@ -12,16 +12,12 @@ export class StructuralComponent {
   ngFor: string;
   ngForAs: string;
   constructor(private utilService: UtilService) {
-    this.ngIf = this.utilService.generateHTML(`<p *ngIf="isVisible; else noCondition">My message if true</p>
+    this.ngIf = this.utilService.html(`<p *ngIf="isVisible; else noCondition">My message if true</p>
 <ng-template #noCondition><p>My message if false<p></ng-template>`);
-    this.ngIfConsistent = this.utilService.generateHTML(`<p *ngIf="isVisible; then condition else noCondition"></p>
+    this.ngIfConsistent = this.utilService.html(`<p *ngIf="isVisible; then condition else noCondition"></p>
 <ng-template #condition><p>My message if true<p></ng-template>
 <ng-template #noCondition><p>My message if false<p></ng-template>`);
-    this.ngFor = this.utilService.generateHTML(
-      `<p *ngFor="let item of items; let i = index">{{ i }} - {{ item.name }}</p>`
-    );
-    this.ngForAs = this.utilService.generateHTML(
-      `<p *ngFor="let item of items; index as i">{{ i }} - {{ item.name }}</p>`
-    );
+    this.ngFor = this.utilService.html(`<p *ngFor="let item of items; let i = index">{{ i }} - {{ item.name }}</p>`);
+    this.ngForAs = this.utilService.html(`<p *ngFor="let item of items; index as i">{{ i }} - {{ item.name }}</p>`);
   }
 }

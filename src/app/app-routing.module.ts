@@ -10,6 +10,10 @@ const appRoutes: Routes = [
   {
     path: 'databinding',
     loadChildren: './databinding/databinding.module#DatabindingModule'
+  },
+  {
+    path: 'animations',
+    loadChildren: './animations/animations.module#AnimationsModule'
   }
 ];
 @NgModule({
