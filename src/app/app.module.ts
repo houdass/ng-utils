@@ -10,6 +10,7 @@ import { DirectivesModule } from './directives/directives.module';
 import { FirebaseModule } from './firebase/firebase.module';
 import { RoutingModule } from './routing/routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from './forms/forms.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ComponentsModule,
     FirebaseModule,
     RoutingModule,
+    FormsModule,
     // AnimationsModule: Lazy loaded
     WildcardRoutingModule
   ],

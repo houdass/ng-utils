@@ -11,13 +11,11 @@ import { bounceLeft } from './animations';
 })
 export class KeyframesComponent {
   courses: string[];
-  easingTs1: string;
-  easingTs2: string;
+  keyframesTs: string;
 
   constructor(private utilService: UtilService) {
     this.courses = ['Course 1', 'Course 2', 'Course 3'];
-    this.easingTs1 = this.utilService.typescript(markdown.easingTs1);
-    this.easingTs2 = this.utilService.typescript(markdown.easingTs2);
+    this.keyframesTs = this.utilService.typescript(markdown.keyframesTs);
   }
 
   addCourse(course: HTMLInputElement): void {

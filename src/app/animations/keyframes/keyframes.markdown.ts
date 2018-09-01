@@ -1,4 +1,19 @@
 export const markdown: any = {
-  easingTs1: `transition(':enter, :leave', animate('1s ease-in'))`,
-  easingTs2: `transition(':enter, :leave', animate('1s cubic-bezier(0,.89,.45,.43)'))`
+  keyframesTs: `transition(':leave', [
+    animate(
+      '1s ease-out',
+      keyframes([
+        style({
+          offset: 0.2,
+          opacity: 1,
+          transform: 'translateX(20px)'
+        }),
+        style({
+          offset: 1,
+          opacity: 0,
+          transform: 'translateX(-100px)'
+        })
+      ])
+    )
+  ])`
 };
