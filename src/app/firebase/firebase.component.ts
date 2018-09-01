@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FirebaseService } from './firebase.service';
 
 @Component({
@@ -6,20 +6,18 @@ import { FirebaseService } from './firebase.service';
   templateUrl: './firebase.component.html',
   styleUrls: ['./firebase.component.scss']
 })
-export class FirebaseComponent implements OnInit {
-  employees$;
+export class FirebaseComponent {
+  employees$: any;
   constructor(private firebaseService: FirebaseService) {}
 
-  ngOnInit() {}
-
-  signIn() {
+  signIn(): void {
     this.firebaseService
       .signIn('test@test.com', '123456')
       .then(() => console.log('SUCCESS'))
       .catch(() => console.log('ERROR OF LOGIN'));
   }
 
-  signOut() {
+  signOut(): void {
     this.firebaseService.signOut();
   }
 
@@ -31,12 +29,12 @@ export class FirebaseComponent implements OnInit {
     return this.firebaseService.currentUserEmail();
   }
 
-  getEmployees() {
+  getEmployees(): void {
     this.employees$ = this.firebaseService.getEmployees();
   }
 
-  addEmployee() {
-    const employee = {
+  addEmployee(): void {
+    const employee: any = {
       id: '5b867fc590b83acf9fbb6492',
       isActive: false,
       picture: 'http://placehold.it/32x32',

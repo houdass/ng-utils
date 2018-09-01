@@ -1,0 +1,30 @@
+<div>
+
+  <ul>
+    <li> Demo:
+      <input #courseInput
+             class="form-control"
+             (keyup.enter)="addCourse(courseInput)">
+      <button type="button"
+              @fade
+              *ngFor="let course of courses"
+              (click)="removeCourse(course)"
+              class="list-group-item"> {{ course }}
+      </button>
+    </li>
+    <li>
+      Il faut se rendre à ce lien pour les différents types d'easings: <a href="https://easings.net/fr">Ici</a>
+      par exemple,
+      <b>Linear:</b> même vitesse
+      <b>Ease-in</b>: commence lentement et se termine rapidement
+      <b>Ease-out</b>: commence rapidement et se termine lentement
+      <b>Ease-in-out</b>: commence lentement et se termine lentement
+      Par exemple,<markdown [data]="easingTs1"></markdown>
+      En utilisant cubic-bezier,
+      <markdown [data]="easingTs2"></markdown>
+    </li>
+  </ul>
+
+
+
+</div>

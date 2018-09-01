@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { routerTransition } from './animations';
 
 @Component({
@@ -7,12 +7,10 @@ import { routerTransition } from './animations';
   styleUrls: ['./animations.component.scss'],
   animations: [routerTransition]
 })
-export class AnimationsComponent implements OnInit {
+export class AnimationsComponent {
   constructor() {}
 
-  ngOnInit() {}
-
-  getState(outlet) {
+  getState(outlet: any): any {
     return outlet.activatedRouteData.state;
   }
 }

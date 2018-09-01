@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UtilService } from '../../shared/services/util.service';
+import { markdown } from './attribute.markdown';
 
 @Component({
   selector: 'app-attribute',
@@ -13,11 +14,9 @@ export class AttributeComponent {
   stringExpConditional: string;
 
   constructor(private utilService: UtilService) {
-    this.stringExp = this.utilService.html(`<span [ngClass]="'dodgerblue large'">Some text</span>`);
-    this.arrayExp = this.utilService.html(`<span [ngClass]="['dodgerblue', 'italic']">Some text</span>`);
-    this.objExp = this.utilService.html(
-      `<span [ngClass]="{dodgerblue: true, large: true, italic: false}">Some Text</span>`
-    );
-    this.objExp = this.utilService.html(`<span [ngClass]="{'dodgerblue large italic': true}">Some text</span>`);
+    this.stringExp = this.utilService.html(markdown.stringExp);
+    this.arrayExp = this.utilService.html(markdown.arrayExp);
+    this.objExp = this.utilService.html(markdown.objExp);
+    this.stringExpConditional = this.utilService.html(markdown.stringExpConditional);
   }
 }

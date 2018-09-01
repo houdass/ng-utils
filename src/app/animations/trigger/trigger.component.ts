@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { trigger, style, transition, animate } from '@angular/animations';
+import { UtilService } from '../../shared/services/util.service';
+import { markdown } from './trigger.markdown';
 
 @Component({
   selector: 'app-trigger',
@@ -13,16 +15,20 @@ import { trigger, style, transition, animate } from '@angular/animations';
   ]
 })
 export class TriggerComponent {
-  items: string[];
-  constructor() {
-    this.items = ['Item 1', 'Item 2', 'Item 3'];
+  triggerTs: string;
+  triggerHtml: string;
+  courses: string[];
+  constructor(utilService: UtilService) {
+    this.courses = ['Course 1', 'Course 2', 'Course 3'];
+    this.triggerTs = utilService.typescript(markdown.triggerHtml);
+    this.triggerHtml = utilService.typescript(markdown.triggerTs);
   }
 
-  addItem(item: HTMLInputElement) {
-    this.items.push(item.value);
+  addCourse(course: HTMLInputElement): void {
+    this.courses.push(course.value);
   }
 
-  removeItem(item: string) {
-    this.items.splice(this.items.indexOf(item), 1);
+  removeCourse(course: string): void {
+    this.courses.splice(this.courses.indexOf(course), 1);
   }
 }

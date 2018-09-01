@@ -1,12 +1,17 @@
-<input #itemInput
-       class="form-control"
-       (keyup.enter)="addItem(itemInput)">
-
 <div>
-  <button type="button"
-          @fade
-          *ngFor="let item of items"
-          (click)="removeItem(item)"
-          class="list-group-item"> {{ item }}
-  </button>
+  <ul>
+    <li> Demo:
+      <input #courseInput
+             class="form-control"
+             (keyup.enter)="addCourse(courseInput)">
+      <button type="button"
+              @fade
+              *ngFor="let course of courses"
+              (click)="removeCourse(course)"
+              class="list-group-item"> {{ course }}
+      </button>
+    </li>
+    <li>HTML: <markdown [data]="triggerHtml"></markdown></li>
+    <li>Typescript: <markdown [data]="triggerTs"></markdown></li>
+  </ul>
 </div>

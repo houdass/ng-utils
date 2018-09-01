@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-reactive',
@@ -11,23 +11,23 @@ export class ReactiveComponent {
     topics: new FormArray([])
   }); */
 
-  form;
+  form: any;
   constructor(fb: FormBuilder) {
     this.form = fb.group({
       topics: fb.array([])
     });
   }
 
-  addTopic(topic: HTMLInputElement) {
+  addTopic(topic: HTMLInputElement): void {
     this.topics.push(new FormControl(topic.value));
     topic.value = '';
   }
 
-  removeTopic(index: number) {
+  removeTopic(index: number): void {
     this.topics.removeAt(index);
   }
 
-  get topics() {
+  get topics(): any {
     return this.form.get('topics');
   }
 }

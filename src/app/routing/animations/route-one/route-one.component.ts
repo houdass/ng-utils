@@ -1,12 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-route-one',
   templateUrl: './route-one.component.html',
   styleUrls: ['./route-one.component.scss']
 })
-export class RouteOneComponent implements OnInit {
+export class RouteOneComponent {
   constructor() {}
-
-  ngOnInit() {}
 }

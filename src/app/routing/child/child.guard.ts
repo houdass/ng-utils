@@ -11,7 +11,7 @@ export class ChildGuard implements CanActivate, CanActivateChild {
     state: RouterStateSnapshot
   ): Observable<boolean> | Promise<boolean> | boolean {
     console.log('CHILD GUARD');
-    return new Promise(resolve => {
+    return new Promise((resolve: any) => {
       setTimeout(() => {
         resolve(true);
       }, 300);

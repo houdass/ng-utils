@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UtilService } from '../../shared/services/util.service';
+import { markdown } from './property-binding.markdown';
 
 @Component({
   selector: 'app-property-binding',
@@ -15,12 +16,12 @@ export class PropertyBindingComponent {
   styleBinding: string;
   styleBinding2: string;
   constructor(private utilService: UtilService) {
-    this.textContent = this.utilService.html('<p [textContent]=[name]></p>');
-    this.propertyBinding = this.utilService.html('<img [src]="user.imgUrl">');
-    this.propertyBindingWithBind = this.utilService.html('<img bind-src="user.imgUrl">');
-    this.attributBinding = this.utilService.html('<td [attr.colspan]="clspn">...</td>');
-    this.classBinding = this.utilService.html('<span [class.active]="isActive">...</span>');
-    this.styleBinding = this.utilService.html(`<p [style.background-color]="'blue'">...</p>`);
-    this.styleBinding2 = this.utilService.html(`<p [style.backgroundColor]="'blue'">...</p>`);
+    this.textContent = this.utilService.html(markdown.textContent);
+    this.propertyBinding = this.utilService.html(markdown.propertyBinding);
+    this.propertyBindingWithBind = this.utilService.html(markdown.propertyBindingWithBind);
+    this.attributBinding = this.utilService.html(markdown.attributBinding);
+    this.classBinding = this.utilService.html(markdown.classBinding);
+    this.styleBinding = this.utilService.html(markdown.styleBinding);
+    this.styleBinding2 = this.utilService.html(markdown.styleBinding2);
   }
 }

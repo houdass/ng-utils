@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UtilService } from '../../shared/services/util.service';
+import { markdown } from './twoway-binding.markdown';
 
 @Component({
   selector: 'app-twoway-binding',
@@ -7,12 +8,10 @@ import { UtilService } from '../../shared/services/util.service';
   styleUrls: ['./twoway-binding.component.scss']
 })
 export class TwowayBindingComponent {
-  twowayBinding: string;
+  twowayBinding1: string;
   twowayBinding2: string;
   constructor(private utilService: UtilService) {
-    this.twowayBinding = this.utilService.html('<input name="name" [(ngModel)]="user.name">');
-    this.twowayBinding2 = this.utilService.html(
-      '<input name="name" [ngModel]="user.name" (ngModelChange)="user.name = $event">'
-    );
+    this.twowayBinding1 = this.utilService.html(markdown.twowayBinding1);
+    this.twowayBinding2 = this.utilService.html(markdown.twowayBinding2);
   }
 }

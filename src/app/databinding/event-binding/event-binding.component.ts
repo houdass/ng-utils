@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UtilService } from '../../shared/services/util.service';
+import { markdown } from './event-binding.markdown';
 
 @Component({
   selector: 'app-event-binding',
@@ -10,7 +11,7 @@ export class EventBindingComponent {
   eventBinding: string;
   eventBindingOn: string;
   constructor(private utilService: UtilService) {
-    this.eventBinding = this.utilService.html('<p (click)="callback()"></p>');
-    this.eventBindingOn = this.utilService.html('<p on-click="callback()"></p>');
+    this.eventBinding = this.utilService.html(markdown.eventBinding);
+    this.eventBindingOn = this.utilService.html(markdown.eventBindingOn);
   }
 }

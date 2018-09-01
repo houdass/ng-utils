@@ -5,17 +5,20 @@ import { Directive, HostBinding, HostListener } from '@angular/core';
 })
 export class HostlistenerHighlightDirective {
   @HostBinding('style.color')
-  color = '#00ff7f';
+  color: string = 'darkcyan';
+
+  @HostBinding('style.cursor')
+  pointer: string = 'pointer';
 
   constructor() {}
 
   @HostListener('mouseenter')
-  mouseenter(eventData: Event) {
-    this.color = '#20b2aa';
+  mouseenter(eventData: Event): void {
+    this.color = 'crimson';
   }
 
   @HostListener('mouseleave')
-  mouseleave(eventData: Event) {
-    this.color = '#00ff7f';
+  mouseleave(eventData: Event): void {
+    this.color = 'darkcyan';
   }
 }

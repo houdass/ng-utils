@@ -7,31 +7,31 @@ export class FirebaseService {
   authState: any = null;
 
   constructor(private afDb: AngularFireDatabase, private afa: AngularFireAuth) {
-    this.afa.authState.subscribe(auth => {
+    this.afa.authState.subscribe((auth: any) => {
       this.authState = auth;
     });
   }
 
-  signIn(email, password) {
-    return this.afa.auth.signInAndRetrieveDataWithEmailAndPassword(email, password).then(credential => {
+  signIn(email: string, password: string): any {
+    return this.afa.auth.signInAndRetrieveDataWithEmailAndPassword(email, password).then((credential: any) => {
       console.log(credential.user);
     });
   }
 
-  signUp(email: string, password: string) {
+  signUp(email: string, password: string): any {
     return this.afa.auth
       .createUserWithEmailAndPassword(email, password)
-      .then(user => {
+      .then((user: any) => {
         this.authState = user;
       })
-      .catch(error => console.log(error));
+      .catch((error: any) => console.log(error));
   }
 
-  signOut() {
+  signOut(): any {
     this.afa.auth.signOut();
   }
 
-  addEmployee(employee) {
+  addEmployee(employee: any): any {
     return this.afDb.list('/employees').push(employee);
   }
 
