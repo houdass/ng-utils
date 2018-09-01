@@ -1,0 +1,16 @@
+<div>
+  <ul>
+    <li> Demo:
+      <input #courseInput
+             class="form-control"
+             (keyup.enter)="addCourse(courseInput)">
+      <button type="button"
+              @fade
+              *ngFor="let course of courses"
+              (click)="removeCourse(course)"
+              class="list-group-item"> {{ course }}
+      </button>
+    <li>HTML: <markdown [data]="stateHtml"></markdown></li>
+    <li>Typescript: <markdown [data]="stateTs"></markdown></li>
+  </ul>
+</div>
