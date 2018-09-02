@@ -13,12 +13,12 @@ export class HostlistenerHighlightDirective {
   constructor() {}
 
   @HostListener('mouseenter')
-  mouseenter(eventData: Event): void {
+  mouseenter(): void {
     this.color = 'crimson';
   }
 
   @HostListener('mouseleave')
-  mouseleave(eventData: Event): void {
+  mouseleave(): void {
     this.color = 'darkcyan';
   }
 }

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
-import { StructuralComponent } from './structural/structural.component';
 import { DirectivesRoutingModule } from './directives-routing.module';
+import { SharedModule } from '../shared/shared.module';
+import { StructuralComponent } from './structural/structural.component';
 import { DirectivesComponent } from './directives.component';
 import { AttributeComponent } from './attribute/attribute.component';
 import { ElementRefComponent } from './element-ref/element-ref.component';
@@ -11,7 +12,8 @@ import { HostbindingComponent } from './hostbinding/hostbinding.component';
 import { HostbindingHighlightDirective } from './hostbinding/hostbinding-highlight.directive';
 import { HostlistenerComponent } from './hostlistener/hostlistener.component';
 import { HostlistenerHighlightDirective } from './hostlistener/hostlistener-highlight.directive';
-import { SharedModule } from '../shared/shared.module';
+import { InputComponent } from './input/input.component';
+import { InputHighlightDirective } from './input/input-highlight.directive';
 
 @NgModule({
   imports: [DirectivesRoutingModule, SharedModule],
@@ -26,7 +28,9 @@ import { SharedModule } from '../shared/shared.module';
     HostbindingComponent,
     HostbindingHighlightDirective,
     HostlistenerComponent,
-    HostlistenerHighlightDirective
+    HostlistenerHighlightDirective,
+    InputComponent,
+    InputHighlightDirective
   ]
 })
 export class DirectivesModule {}

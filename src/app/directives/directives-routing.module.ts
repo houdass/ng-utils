@@ -7,6 +7,7 @@ import { ElementRefComponent } from './element-ref/element-ref.component';
 import { RendererComponent } from './renderer/renderer.component';
 import { HostbindingComponent } from './hostbinding/hostbinding.component';
 import { HostlistenerComponent } from './hostlistener/hostlistener.component';
+import { InputComponent } from './input/input.component';
 
 const directivesRoutes: Routes = [
   {
@@ -36,6 +37,10 @@ const directivesRoutes: Routes = [
       {
         path: 'hostlistener',
         component: HostlistenerComponent
+      },
+      {
+        path: 'input',
+        component: InputComponent
       }
     ]
   }

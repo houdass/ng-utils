@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormControl } from '@angular/forms';
+import { AbstractControl, Form, FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-reactive',
@@ -11,7 +11,7 @@ export class ReactiveComponent {
     topics: new FormArray([])
   }); */
 
-  form: any;
+  form: FormGroup;
   constructor(fb: FormBuilder) {
     this.form = fb.group({
       topics: fb.array([])
@@ -27,7 +27,7 @@ export class ReactiveComponent {
     this.topics.removeAt(index);
   }
 
-  get topics(): any {
-    return this.form.get('topics');
+  get topics(): FormArray {
+    return this.form.get('topics') as FormArray;
   }
 }

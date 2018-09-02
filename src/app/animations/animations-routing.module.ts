@@ -6,6 +6,7 @@ import { StateComponent } from './state/state.component';
 import { TransitionComponent } from './transition/transition.component';
 import { EasingComponent } from './easing/easing.component';
 import { KeyframesComponent } from './keyframes/keyframes.component';
+import { UseAnimationComponent } from './use-animation/use-animation.component';
 
 const animationsRoutes: Routes = [
   {
@@ -31,6 +32,10 @@ const animationsRoutes: Routes = [
       {
         path: 'keyframes',
         component: KeyframesComponent
+      },
+      {
+        path: 'use-animation',
+        component: UseAnimationComponent
       }
     ]
   }

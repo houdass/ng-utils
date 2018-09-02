@@ -1,0 +1,15 @@
+<div>
+  <ul>
+    <li> Demo:
+      <input #courseInput
+             class="form-control"
+             (keyup.enter)="addCourse(courseInput)">
+      <button type="button"
+              @bounceLeft
+              *ngFor="let course of courses"
+              (click)="removeCourse(course)"
+              class="list-group-item"> {{ course }}
+      </button>
+    <li><markdown [data]="useAnimationTs"></markdown></li>
+  </ul>
+</div>

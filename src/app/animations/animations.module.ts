@@ -8,6 +8,7 @@ import { StateComponent } from './state/state.component';
 import { TransitionComponent } from './transition/transition.component';
 import { EasingComponent } from './easing/easing.component';
 import { KeyframesComponent } from './keyframes/keyframes.component';
+import { UseAnimationComponent } from './use-animation/use-animation.component';
 
 @NgModule({
   imports: [AnimationsRoutingModule, SharedModule, CommonModule],
@@ -17,7 +18,8 @@ import { KeyframesComponent } from './keyframes/keyframes.component';
     StateComponent,
     TransitionComponent,
     EasingComponent,
-    KeyframesComponent
+    KeyframesComponent,
+    UseAnimationComponent
   ]
 })
 export class AnimationsModule {}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FirebaseService } from './firebase.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-firebase',
@@ -7,7 +8,7 @@ import { FirebaseService } from './firebase.service';
   styleUrls: ['./firebase.component.scss']
 })
 export class FirebaseComponent {
-  employees$: any;
+  employees$: Observable<any>;
   constructor(private firebaseService: FirebaseService) {}
 
   signIn(): void {

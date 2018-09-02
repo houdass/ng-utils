@@ -1,6 +1,7 @@
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { Observable } from 'rxjs';
 
 @Injectable()
 export class FirebaseService {
@@ -13,7 +14,7 @@ export class FirebaseService {
   }
 
   signIn(email: string, password: string): any {
-    return this.afa.auth.signInAndRetrieveDataWithEmailAndPassword(email, password).then((credential: any) => {
+    return this.afa.auth.signInWithEmailAndPassword(email, password).then((credential: any) => {
       console.log(credential.user);
     });
   }
@@ -35,7 +36,7 @@ export class FirebaseService {
     return this.afDb.list('/employees').push(employee);
   }
 
-  getEmployees(): any {
+  getEmployees(): Observable<any> {
     return this.afDb.list('/employees').valueChanges();
   }
 
