@@ -1,6 +1,6 @@
 export const markdown: any = {
-  textContent: '<p (click)="callback()"></p>',
-  propertyBinding: '<p on-click="callback()"></p>',
+  textContent: '<p [textContent]=[name]></p>',
+  propertyBinding: '<img [src]="user.imgUrl">',
   propertyBindingWithBind: '<img bind-src="user.imgUrl">',
   attributBinding: '<td [attr.colspan]="clspn">...</td>',
   classBinding: '<span [class.active]="isActive">...</span>',
