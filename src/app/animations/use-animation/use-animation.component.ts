@@ -15,6 +15,7 @@ import { bounceLeftInAnimation, bounceLeftOutAnimation } from './animations';
 })
 export class UseAnimationComponent {
   courses: string[];
+  useAnimationTs: string;
 
   constructor() {
     this.courses = ['Course 1', 'Course 2', 'Course 3'];
