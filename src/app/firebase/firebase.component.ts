@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FirebaseService } from './firebase.service';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/internal/operators';
 
 @Component({
   selector: 'app-firebase',
@@ -9,6 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class FirebaseComponent {
   employees$: Observable<any>;
+
   constructor(private firebaseService: FirebaseService) {}
 
   signIn(): void {
@@ -31,7 +33,11 @@ export class FirebaseComponent {
   }
 
   getEmployees(): void {
-    this.employees$ = this.firebaseService.getEmployees();
+    // this.employees$ = this.firebaseService.getEmployees();
+
+    this.employees$ = this.firebaseService
+      .getEmployeesV2()
+      .pipe(map(changes => changes.map(c => ({ key: c.payload.key, ...c.payload.val() }))));
   }
 
   addEmployee(): void {
@@ -49,5 +55,13 @@ export class FirebaseComponent {
       address: '200 Vermont Street, Eastvale, Northern Mariana Islands, 9359'
     };
     this.firebaseService.addEmployee(employee);
+  }
+
+  removeEmployee(key: string): void {
+    this.firebaseService.removeEmployee(key);
+  }
+
+  updateEmployee(employee: any): void {
+    this.firebaseService.updateEmployee(employee);
   }
 }

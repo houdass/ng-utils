@@ -36,8 +36,20 @@ export class FirebaseService {
     return this.afDb.list('/employees').push(employee);
   }
 
+  removeEmployee(key: string): any {
+    return this.afDb.list('/employees').remove(key);
+  }
+
+  updateEmployee(employee: any): any {
+    return this.afDb.list('/employees').update(employee.key, employee);
+  }
+
   getEmployees(): Observable<any> {
     return this.afDb.list('/employees').valueChanges();
+  }
+
+  getEmployeesV2(): Observable<any> {
+    return this.afDb.list('/employees').snapshotChanges();
   }
 
   isAuthenticated(): boolean {
