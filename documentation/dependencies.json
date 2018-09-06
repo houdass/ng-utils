@@ -1,0 +1,3624 @@
+[
+  {
+    "name": "AnimationsRoutingModule",
+    "file": "app/animations/animations-routing.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forChild(args)"
+      }
+    ],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 1179,
+        "end": 1232,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 1179,
+          "end": 1189,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 1190,
+          "end": 1232,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 1192,
+              "end": 1231,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 1192,
+                "end": 1213,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 1192,
+                  "end": 1204,
+                  "flags": 0,
+                  "escapedText": "RouterModule"
+                },
+                "name": {
+                  "pos": 1205,
+                  "end": 1213,
+                  "flags": 0,
+                  "escapedText": "forChild"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 1214,
+                  "end": 1230,
+                  "flags": 0,
+                  "escapedText": "animationsRoutes"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "pos": 1233,
+        "end": 1259,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 1233,
+          "end": 1243,
+          "flags": 0,
+          "escapedText": "exports"
+        },
+        "initializer": {
+          "pos": 1244,
+          "end": 1259,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 1246,
+              "end": 1258,
+              "flags": 0,
+              "escapedText": "RouterModule"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "AnimationsModule",
+    "file": "app/animations/animations.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "AnimationsComponent",
+        "file": "app/animations/animations.component.ts",
+        "selector": "app-animations",
+        "providers": [],
+        "templateUrl": [
+          "animations.component.html"
+        ],
+        "styleUrls": [
+          "animations.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 169,
+            "end": 198,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 169,
+              "end": 180,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 181,
+              "end": 198,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-animations"
+            }
+          },
+          {
+            "pos": 199,
+            "end": 244,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 199,
+              "end": 213,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 214,
+              "end": 244,
+              "flags": 0,
+              "kind": 9,
+              "text": "./animations.component.html"
+            }
+          },
+          {
+            "pos": 245,
+            "end": 290,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 245,
+              "end": 257,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 258,
+              "end": 290,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 260,
+                  "end": 289,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./animations.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "TriggerComponent"
+      },
+      {
+        "name": "StateComponent"
+      },
+      {
+        "name": "TransitionComponent"
+      },
+      {
+        "name": "EasingComponent"
+      },
+      {
+        "name": "KeyframesComponent"
+      },
+      {
+        "name": "UseAnimationComponent"
+      }
+    ],
+    "imports": [
+      {
+        "name": "AnimationsRoutingModule"
+      },
+      {
+        "name": "SharedModule"
+      },
+      {
+        "name": "CommonModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 698,
+        "end": 763,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 698,
+          "end": 708,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 709,
+          "end": 763,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 711,
+              "end": 734,
+              "flags": 0,
+              "escapedText": "AnimationsRoutingModule"
+            },
+            {
+              "pos": 735,
+              "end": 748,
+              "flags": 0,
+              "escapedText": "SharedModule"
+            },
+            {
+              "pos": 749,
+              "end": 762,
+              "flags": 0,
+              "escapedText": "CommonModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 764,
+        "end": 949,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 764,
+          "end": 779,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 780,
+          "end": 949,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 782,
+              "end": 806,
+              "flags": 0,
+              "escapedText": "AnimationsComponent"
+            },
+            {
+              "pos": 807,
+              "end": 828,
+              "flags": 0,
+              "escapedText": "TriggerComponent"
+            },
+            {
+              "pos": 829,
+              "end": 848,
+              "flags": 0,
+              "escapedText": "StateComponent"
+            },
+            {
+              "pos": 849,
+              "end": 873,
+              "flags": 0,
+              "escapedText": "TransitionComponent"
+            },
+            {
+              "pos": 874,
+              "end": 894,
+              "flags": 0,
+              "escapedText": "EasingComponent"
+            },
+            {
+              "pos": 895,
+              "end": 918,
+              "flags": 0,
+              "escapedText": "KeyframesComponent"
+            },
+            {
+              "pos": 919,
+              "end": 945,
+              "flags": 0,
+              "escapedText": "UseAnimationComponent"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "AppRoutingModule",
+    "file": "src/app/app-routing.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forRoot(args)"
+      }
+    ],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 422,
+        "end": 467,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 422,
+          "end": 432,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 433,
+          "end": 467,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 435,
+              "end": 466,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 435,
+                "end": 455,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 435,
+                  "end": 447,
+                  "flags": 0,
+                  "escapedText": "RouterModule"
+                },
+                "name": {
+                  "pos": 448,
+                  "end": 455,
+                  "flags": 0,
+                  "escapedText": "forRoot"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 456,
+                  "end": 465,
+                  "flags": 0,
+                  "escapedText": "appRoutes"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "pos": 468,
+        "end": 494,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 468,
+          "end": 478,
+          "flags": 0,
+          "escapedText": "exports"
+        },
+        "initializer": {
+          "pos": 479,
+          "end": 494,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 481,
+              "end": 493,
+              "flags": 0,
+              "escapedText": "RouterModule"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "AppModule",
+    "file": "src/app/app.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "AppComponent",
+        "file": "src/app/app.component.ts",
+        "selector": "app-root",
+        "providers": [],
+        "templateUrl": [
+          "app.component.html"
+        ],
+        "styleUrls": [
+          "app.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 56,
+            "end": 79,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 56,
+              "end": 67,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 68,
+              "end": 79,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-root"
+            }
+          },
+          {
+            "pos": 80,
+            "end": 118,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 80,
+              "end": 94,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 95,
+              "end": 118,
+              "flags": 0,
+              "kind": 9,
+              "text": "./app.component.html"
+            }
+          },
+          {
+            "pos": 119,
+            "end": 157,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 119,
+              "end": 131,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 132,
+              "end": 157,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 134,
+                  "end": 156,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./app.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "name": "BrowserModule"
+      },
+      {
+        "name": "BrowserAnimationsModule"
+      },
+      {
+        "name": "AppRoutingModule"
+      },
+      {
+        "name": "DirectivesModule"
+      },
+      {
+        "name": "ComponentsModule"
+      },
+      {
+        "name": "FirebaseModule"
+      },
+      {
+        "name": "RoutingModule"
+      },
+      {
+        "name": "FormsModule"
+      },
+      {
+        "name": "WildcardRoutingModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [
+      {
+        "name": "AppComponent"
+      }
+    ],
+    "__raw": [
+      {
+        "pos": 689,
+        "end": 720,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 689,
+          "end": 704,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 705,
+          "end": 720,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 707,
+              "end": 719,
+              "flags": 0,
+              "escapedText": "AppComponent"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 721,
+        "end": 1009,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 721,
+          "end": 731,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 732,
+          "end": 1009,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 734,
+              "end": 752,
+              "flags": 0,
+              "escapedText": "BrowserModule"
+            },
+            {
+              "pos": 753,
+              "end": 781,
+              "flags": 0,
+              "escapedText": "BrowserAnimationsModule"
+            },
+            {
+              "pos": 782,
+              "end": 803,
+              "flags": 0,
+              "escapedText": "AppRoutingModule"
+            },
+            {
+              "pos": 804,
+              "end": 863,
+              "flags": 0,
+              "escapedText": "DirectivesModule"
+            },
+            {
+              "pos": 864,
+              "end": 885,
+              "flags": 0,
+              "escapedText": "ComponentsModule"
+            },
+            {
+              "pos": 886,
+              "end": 905,
+              "flags": 0,
+              "escapedText": "FirebaseModule"
+            },
+            {
+              "pos": 906,
+              "end": 924,
+              "flags": 0,
+              "escapedText": "RoutingModule"
+            },
+            {
+              "pos": 925,
+              "end": 941,
+              "flags": 0,
+              "escapedText": "FormsModule"
+            },
+            {
+              "pos": 942,
+              "end": 1005,
+              "flags": 0,
+              "escapedText": "WildcardRoutingModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 1010,
+        "end": 1026,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 1010,
+          "end": 1022,
+          "flags": 0,
+          "escapedText": "providers"
+        },
+        "initializer": {
+          "pos": 1023,
+          "end": 1026,
+          "flags": 0,
+          "kind": 182,
+          "elements": []
+        }
+      },
+      {
+        "pos": 1027,
+        "end": 1055,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 1027,
+          "end": 1039,
+          "flags": 0,
+          "escapedText": "bootstrap"
+        },
+        "initializer": {
+          "pos": 1040,
+          "end": 1055,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 1042,
+              "end": 1054,
+              "flags": 0,
+              "escapedText": "AppComponent"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "ComponentsRoutingModule",
+    "file": "app/components/components-routing.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forChild(args)"
+      }
+    ],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 431,
+        "end": 484,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 431,
+          "end": 441,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 442,
+          "end": 484,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 444,
+              "end": 483,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 444,
+                "end": 465,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 444,
+                  "end": 456,
+                  "flags": 0,
+                  "escapedText": "RouterModule"
+                },
+                "name": {
+                  "pos": 457,
+                  "end": 465,
+                  "flags": 0,
+                  "escapedText": "forChild"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 466,
+                  "end": 482,
+                  "flags": 0,
+                  "escapedText": "componentsRoutes"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "pos": 485,
+        "end": 511,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 485,
+          "end": 495,
+          "flags": 0,
+          "escapedText": "exports"
+        },
+        "initializer": {
+          "pos": 496,
+          "end": 511,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 498,
+              "end": 510,
+              "flags": 0,
+              "escapedText": "RouterModule"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "ComponentsModule",
+    "file": "app/components/components.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "ComponentsComponent",
+        "file": "app/components/components.component.ts",
+        "selector": "app-components",
+        "providers": [],
+        "templateUrl": [
+          "components.component.html"
+        ],
+        "styleUrls": [
+          "components.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 56,
+            "end": 85,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 56,
+              "end": 67,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 68,
+              "end": 85,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-components"
+            }
+          },
+          {
+            "pos": 86,
+            "end": 131,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 86,
+              "end": 100,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 101,
+              "end": 131,
+              "flags": 0,
+              "kind": 9,
+              "text": "./components.component.html"
+            }
+          },
+          {
+            "pos": 132,
+            "end": 177,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 132,
+              "end": 144,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 145,
+              "end": 177,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 147,
+                  "end": 176,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./components.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "InputComponent"
+      }
+    ],
+    "imports": [
+      {
+        "name": "CommonModule"
+      },
+      {
+        "name": "ComponentsRoutingModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 293,
+        "end": 344,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 293,
+          "end": 303,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 304,
+          "end": 344,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 306,
+              "end": 318,
+              "flags": 0,
+              "escapedText": "CommonModule"
+            },
+            {
+              "pos": 319,
+              "end": 343,
+              "flags": 0,
+              "escapedText": "ComponentsRoutingModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 345,
+        "end": 399,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 345,
+          "end": 360,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 361,
+          "end": 399,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 363,
+              "end": 382,
+              "flags": 0,
+              "escapedText": "ComponentsComponent"
+            },
+            {
+              "pos": 383,
+              "end": 398,
+              "flags": 0,
+              "escapedText": "InputComponent"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "DatabindingRoutingModule",
+    "file": "app/databinding/databinding-routing.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forChild(args)"
+      }
+    ],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 1028,
+        "end": 1082,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 1028,
+          "end": 1038,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 1039,
+          "end": 1082,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 1041,
+              "end": 1081,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 1041,
+                "end": 1062,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 1041,
+                  "end": 1053,
+                  "flags": 0,
+                  "escapedText": "RouterModule"
+                },
+                "name": {
+                  "pos": 1054,
+                  "end": 1062,
+                  "flags": 0,
+                  "escapedText": "forChild"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 1063,
+                  "end": 1080,
+                  "flags": 0,
+                  "escapedText": "databindingRoutes"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "pos": 1083,
+        "end": 1109,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 1083,
+          "end": 1093,
+          "flags": 0,
+          "escapedText": "exports"
+        },
+        "initializer": {
+          "pos": 1094,
+          "end": 1109,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 1096,
+              "end": 1108,
+              "flags": 0,
+              "escapedText": "RouterModule"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "DatabindingModule",
+    "file": "app/databinding/databinding.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "DatabindingComponent",
+        "file": "app/databinding/databinding.component.ts",
+        "selector": "app-databinding",
+        "providers": [],
+        "templateUrl": [
+          "databinding.component.html"
+        ],
+        "styleUrls": [
+          "databinding.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 56,
+            "end": 86,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 56,
+              "end": 67,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 68,
+              "end": 86,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-databinding"
+            }
+          },
+          {
+            "pos": 87,
+            "end": 133,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 87,
+              "end": 101,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 102,
+              "end": 133,
+              "flags": 0,
+              "kind": 9,
+              "text": "./databinding.component.html"
+            }
+          },
+          {
+            "pos": 134,
+            "end": 180,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 134,
+              "end": 146,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 147,
+              "end": 180,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 149,
+                  "end": 179,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./databinding.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "StringInterpolationComponent"
+      },
+      {
+        "name": "PropertyBindingComponent"
+      },
+      {
+        "name": "EventBindingComponent"
+      },
+      {
+        "name": "TwowayBindingComponent"
+      }
+    ],
+    "imports": [
+      {
+        "name": "DatabindingRoutingModule"
+      },
+      {
+        "name": "SharedModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 604,
+        "end": 656,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 604,
+          "end": 614,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 615,
+          "end": 656,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 617,
+              "end": 641,
+              "flags": 0,
+              "escapedText": "DatabindingRoutingModule"
+            },
+            {
+              "pos": 642,
+              "end": 655,
+              "flags": 0,
+              "escapedText": "SharedModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 657,
+        "end": 823,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 657,
+          "end": 672,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 673,
+          "end": 823,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 675,
+              "end": 700,
+              "flags": 0,
+              "escapedText": "DatabindingComponent"
+            },
+            {
+              "pos": 701,
+              "end": 734,
+              "flags": 0,
+              "escapedText": "StringInterpolationComponent"
+            },
+            {
+              "pos": 735,
+              "end": 764,
+              "flags": 0,
+              "escapedText": "PropertyBindingComponent"
+            },
+            {
+              "pos": 765,
+              "end": 791,
+              "flags": 0,
+              "escapedText": "EventBindingComponent"
+            },
+            {
+              "pos": 792,
+              "end": 819,
+              "flags": 0,
+              "escapedText": "TwowayBindingComponent"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "DirectivesRoutingModule",
+    "file": "app/directives/directives-routing.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forChild(args)"
+      }
+    ],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 1376,
+        "end": 1429,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 1376,
+          "end": 1386,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 1387,
+          "end": 1429,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 1389,
+              "end": 1428,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 1389,
+                "end": 1410,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 1389,
+                  "end": 1401,
+                  "flags": 0,
+                  "escapedText": "RouterModule"
+                },
+                "name": {
+                  "pos": 1402,
+                  "end": 1410,
+                  "flags": 0,
+                  "escapedText": "forChild"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 1411,
+                  "end": 1427,
+                  "flags": 0,
+                  "escapedText": "directivesRoutes"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "pos": 1430,
+        "end": 1456,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 1430,
+          "end": 1440,
+          "flags": 0,
+          "escapedText": "exports"
+        },
+        "initializer": {
+          "pos": 1441,
+          "end": 1456,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 1443,
+              "end": 1455,
+              "flags": 0,
+              "escapedText": "RouterModule"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "DirectivesModule",
+    "file": "app/directives/directives.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "DirectivesComponent",
+        "file": "app/directives/directives.component.ts",
+        "selector": "app-directives",
+        "providers": [],
+        "templateUrl": [
+          "directives.component.html"
+        ],
+        "styleUrls": [
+          "directives.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 56,
+            "end": 85,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 56,
+              "end": 67,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 68,
+              "end": 85,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-directives"
+            }
+          },
+          {
+            "pos": 86,
+            "end": 131,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 86,
+              "end": 100,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 101,
+              "end": 131,
+              "flags": 0,
+              "kind": 9,
+              "text": "./directives.component.html"
+            }
+          },
+          {
+            "pos": 132,
+            "end": 177,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 132,
+              "end": 144,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 145,
+              "end": 177,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 147,
+                  "end": 176,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./directives.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "StructuralComponent"
+      },
+      {
+        "name": "AttributeComponent",
+        "file": "directives/attribute/attribute.component.ts",
+        "selector": "app-attribute",
+        "providers": [],
+        "templateUrl": [
+          "attribute.component.html"
+        ],
+        "styleUrls": [
+          "attribute.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 179,
+            "end": 207,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 179,
+              "end": 190,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 191,
+              "end": 207,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-attribute"
+            }
+          },
+          {
+            "pos": 208,
+            "end": 252,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 208,
+              "end": 222,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 223,
+              "end": 252,
+              "flags": 0,
+              "kind": 9,
+              "text": "./attribute.component.html"
+            }
+          },
+          {
+            "pos": 253,
+            "end": 297,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 253,
+              "end": 265,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 266,
+              "end": 297,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 268,
+                  "end": 296,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./attribute.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "ElementRefComponent"
+      },
+      {
+        "name": "ElementRefHighlightDirective"
+      },
+      {
+        "name": "RendererComponent"
+      },
+      {
+        "name": "RendererHighlightDirective"
+      },
+      {
+        "name": "HostbindingComponent"
+      },
+      {
+        "name": "HostbindingHighlightDirective"
+      },
+      {
+        "name": "HostlistenerComponent"
+      },
+      {
+        "name": "HostlistenerHighlightDirective"
+      },
+      {
+        "name": "InputComponent",
+        "file": "components/input/input.component.ts",
+        "selector": "app-input",
+        "providers": [],
+        "templateUrl": [
+          "input.component.html"
+        ],
+        "styleUrls": [
+          "input.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 56,
+            "end": 80,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 56,
+              "end": 67,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 68,
+              "end": 80,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-input"
+            }
+          },
+          {
+            "pos": 81,
+            "end": 121,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 81,
+              "end": 95,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 96,
+              "end": 121,
+              "flags": 0,
+              "kind": 9,
+              "text": "./input.component.html"
+            }
+          },
+          {
+            "pos": 122,
+            "end": 162,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 122,
+              "end": 134,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 135,
+              "end": 162,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 137,
+                  "end": 161,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./input.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "InputHighlightDirective"
+      }
+    ],
+    "imports": [
+      {
+        "name": "DirectivesRoutingModule"
+      },
+      {
+        "name": "SharedModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 1191,
+        "end": 1242,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 1191,
+          "end": 1201,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 1202,
+          "end": 1242,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 1204,
+              "end": 1227,
+              "flags": 0,
+              "escapedText": "DirectivesRoutingModule"
+            },
+            {
+              "pos": 1228,
+              "end": 1241,
+              "flags": 0,
+              "escapedText": "SharedModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 1243,
+        "end": 1625,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 1243,
+          "end": 1258,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 1259,
+          "end": 1625,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 1261,
+              "end": 1285,
+              "flags": 0,
+              "escapedText": "DirectivesComponent"
+            },
+            {
+              "pos": 1286,
+              "end": 1310,
+              "flags": 0,
+              "escapedText": "StructuralComponent"
+            },
+            {
+              "pos": 1311,
+              "end": 1334,
+              "flags": 0,
+              "escapedText": "AttributeComponent"
+            },
+            {
+              "pos": 1335,
+              "end": 1359,
+              "flags": 0,
+              "escapedText": "ElementRefComponent"
+            },
+            {
+              "pos": 1360,
+              "end": 1393,
+              "flags": 0,
+              "escapedText": "ElementRefHighlightDirective"
+            },
+            {
+              "pos": 1394,
+              "end": 1416,
+              "flags": 0,
+              "escapedText": "RendererComponent"
+            },
+            {
+              "pos": 1417,
+              "end": 1448,
+              "flags": 0,
+              "escapedText": "RendererHighlightDirective"
+            },
+            {
+              "pos": 1449,
+              "end": 1474,
+              "flags": 0,
+              "escapedText": "HostbindingComponent"
+            },
+            {
+              "pos": 1475,
+              "end": 1509,
+              "flags": 0,
+              "escapedText": "HostbindingHighlightDirective"
+            },
+            {
+              "pos": 1510,
+              "end": 1536,
+              "flags": 0,
+              "escapedText": "HostlistenerComponent"
+            },
+            {
+              "pos": 1537,
+              "end": 1572,
+              "flags": 0,
+              "escapedText": "HostlistenerHighlightDirective"
+            },
+            {
+              "pos": 1573,
+              "end": 1592,
+              "flags": 0,
+              "escapedText": "InputComponent"
+            },
+            {
+              "pos": 1593,
+              "end": 1621,
+              "flags": 0,
+              "escapedText": "InputHighlightDirective"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "FirebaseRoutingModule",
+    "file": "app/firebase/firebase-routing.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forChild(args)"
+      }
+    ],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 267,
+        "end": 318,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 267,
+          "end": 277,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 278,
+          "end": 318,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 280,
+              "end": 317,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 280,
+                "end": 301,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 280,
+                  "end": 292,
+                  "flags": 0,
+                  "escapedText": "RouterModule"
+                },
+                "name": {
+                  "pos": 293,
+                  "end": 301,
+                  "flags": 0,
+                  "escapedText": "forChild"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 302,
+                  "end": 316,
+                  "flags": 0,
+                  "escapedText": "firebaseRoutes"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "pos": 319,
+        "end": 345,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 319,
+          "end": 329,
+          "flags": 0,
+          "escapedText": "exports"
+        },
+        "initializer": {
+          "pos": 330,
+          "end": 345,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 332,
+              "end": 344,
+              "flags": 0,
+              "escapedText": "RouterModule"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "FirebaseModule",
+    "file": "app/firebase/firebase.module.ts",
+    "providers": [
+      {
+        "name": "FirebaseService"
+      }
+    ],
+    "declarations": [
+      {
+        "name": "FirebaseComponent",
+        "file": "app/firebase/firebase.component.ts",
+        "selector": "app-firebase",
+        "providers": [],
+        "templateUrl": [
+          "firebase.component.html"
+        ],
+        "styleUrls": [
+          "firebase.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 192,
+            "end": 219,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 192,
+              "end": 203,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 204,
+              "end": 219,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-firebase"
+            }
+          },
+          {
+            "pos": 220,
+            "end": 263,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 220,
+              "end": 234,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 235,
+              "end": 263,
+              "flags": 0,
+              "kind": 9,
+              "text": "./firebase.component.html"
+            }
+          },
+          {
+            "pos": 264,
+            "end": 307,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 264,
+              "end": 276,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 277,
+              "end": 307,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 279,
+                  "end": 306,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./firebase.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "name": "CommonModule"
+      },
+      {
+        "name": "FormsModule"
+      },
+      {
+        "name": "FirebaseRoutingModule"
+      },
+      {
+        "ns": "AngularFireModule",
+        "name": "AngularFireModule.initializeApp(args)"
+      },
+      {
+        "name": "AngularFireDatabaseModule"
+      },
+      {
+        "name": "AngularFireAuthModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 565,
+        "end": 760,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 565,
+          "end": 575,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 576,
+          "end": 760,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 578,
+              "end": 595,
+              "flags": 0,
+              "escapedText": "CommonModule"
+            },
+            {
+              "pos": 596,
+              "end": 612,
+              "flags": 0,
+              "escapedText": "FormsModule"
+            },
+            {
+              "pos": 613,
+              "end": 639,
+              "flags": 0,
+              "escapedText": "FirebaseRoutingModule"
+            },
+            {
+              "pos": 640,
+              "end": 698,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 640,
+                "end": 676,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 640,
+                  "end": 662,
+                  "flags": 0,
+                  "escapedText": "AngularFireModule"
+                },
+                "name": {
+                  "pos": 663,
+                  "end": 676,
+                  "flags": 0,
+                  "escapedText": "initializeApp"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 677,
+                  "end": 697,
+                  "flags": 0,
+                  "kind": 184,
+                  "expression": {
+                    "pos": 677,
+                    "end": 688,
+                    "flags": 0,
+                    "escapedText": "environment"
+                  },
+                  "name": {
+                    "pos": 689,
+                    "end": 697,
+                    "flags": 0,
+                    "escapedText": "firebase"
+                  }
+                }
+              ]
+            },
+            {
+              "pos": 699,
+              "end": 729,
+              "flags": 0,
+              "escapedText": "AngularFireDatabaseModule"
+            },
+            {
+              "pos": 730,
+              "end": 756,
+              "flags": 0,
+              "escapedText": "AngularFireAuthModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 761,
+        "end": 797,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 761,
+          "end": 776,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 777,
+          "end": 797,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 779,
+              "end": 796,
+              "flags": 0,
+              "escapedText": "FirebaseComponent"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 798,
+        "end": 829,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 798,
+          "end": 810,
+          "flags": 0,
+          "escapedText": "providers"
+        },
+        "initializer": {
+          "pos": 811,
+          "end": 829,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 813,
+              "end": 828,
+              "flags": 0,
+              "escapedText": "FirebaseService"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "FormsRoutingModule",
+    "file": "app/forms/forms-routing.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forChild(args)"
+      }
+    ],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 601,
+        "end": 649,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 601,
+          "end": 611,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 612,
+          "end": 649,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 614,
+              "end": 648,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 614,
+                "end": 635,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 614,
+                  "end": 626,
+                  "flags": 0,
+                  "escapedText": "RouterModule"
+                },
+                "name": {
+                  "pos": 627,
+                  "end": 635,
+                  "flags": 0,
+                  "escapedText": "forChild"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 636,
+                  "end": 647,
+                  "flags": 0,
+                  "escapedText": "formsRoutes"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "pos": 650,
+        "end": 676,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 650,
+          "end": 660,
+          "flags": 0,
+          "escapedText": "exports"
+        },
+        "initializer": {
+          "pos": 661,
+          "end": 676,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 663,
+              "end": 675,
+              "flags": 0,
+              "escapedText": "RouterModule"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "FormsModule",
+    "file": "app/forms/forms.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "FormsComponent",
+        "file": "app/forms/forms.component.ts",
+        "selector": "app-forms",
+        "providers": [],
+        "templateUrl": [
+          "forms.component.html"
+        ],
+        "styleUrls": [
+          "forms.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 56,
+            "end": 80,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 56,
+              "end": 67,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 68,
+              "end": 80,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-forms"
+            }
+          },
+          {
+            "pos": 81,
+            "end": 121,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 81,
+              "end": 95,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 96,
+              "end": 121,
+              "flags": 0,
+              "kind": 9,
+              "text": "./forms.component.html"
+            }
+          },
+          {
+            "pos": 122,
+            "end": 162,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 122,
+              "end": 134,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 135,
+              "end": 162,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 137,
+                  "end": 161,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./forms.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "TemplateDrivenComponent"
+      },
+      {
+        "name": "ReactiveComponent"
+      }
+    ],
+    "imports": [
+      {
+        "name": "CommonModule"
+      },
+      {
+        "name": "ReactiveFormsModule"
+      },
+      {
+        "name": "FormsRoutingModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 423,
+        "end": 490,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 423,
+          "end": 433,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 434,
+          "end": 490,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 436,
+              "end": 448,
+              "flags": 0,
+              "escapedText": "CommonModule"
+            },
+            {
+              "pos": 449,
+              "end": 469,
+              "flags": 0,
+              "escapedText": "ReactiveFormsModule"
+            },
+            {
+              "pos": 470,
+              "end": 489,
+              "flags": 0,
+              "escapedText": "FormsRoutingModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 491,
+        "end": 568,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 491,
+          "end": 506,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 507,
+          "end": 568,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 509,
+              "end": 523,
+              "flags": 0,
+              "escapedText": "FormsComponent"
+            },
+            {
+              "pos": 524,
+              "end": 548,
+              "flags": 0,
+              "escapedText": "TemplateDrivenComponent"
+            },
+            {
+              "pos": 549,
+              "end": 567,
+              "flags": 0,
+              "escapedText": "ReactiveComponent"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "RoutingRoutingModule",
+    "file": "app/routing/routing-routing.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forChild(args)"
+      }
+    ],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 1209,
+        "end": 1259,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 1209,
+          "end": 1219,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 1220,
+          "end": 1259,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 1222,
+              "end": 1258,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 1222,
+                "end": 1243,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 1222,
+                  "end": 1234,
+                  "flags": 0,
+                  "escapedText": "RouterModule"
+                },
+                "name": {
+                  "pos": 1235,
+                  "end": 1243,
+                  "flags": 0,
+                  "escapedText": "forChild"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 1244,
+                  "end": 1257,
+                  "flags": 0,
+                  "escapedText": "routingRoutes"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "pos": 1260,
+        "end": 1286,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 1260,
+          "end": 1270,
+          "flags": 0,
+          "escapedText": "exports"
+        },
+        "initializer": {
+          "pos": 1271,
+          "end": 1286,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 1273,
+              "end": 1285,
+              "flags": 0,
+              "escapedText": "RouterModule"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "RoutingModule",
+    "file": "app/routing/routing.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "RoutingComponent",
+        "file": "app/routing/routing.component.ts",
+        "selector": "app-routing",
+        "providers": [],
+        "templateUrl": [
+          "routing.component.html"
+        ],
+        "styleUrls": [
+          "routing.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 56,
+            "end": 82,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 56,
+              "end": 67,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 68,
+              "end": 82,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-routing"
+            }
+          },
+          {
+            "pos": 83,
+            "end": 125,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 83,
+              "end": 97,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 98,
+              "end": 125,
+              "flags": 0,
+              "kind": 9,
+              "text": "./routing.component.html"
+            }
+          },
+          {
+            "pos": 126,
+            "end": 168,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 126,
+              "end": 138,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 139,
+              "end": 168,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 141,
+                  "end": 167,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./routing.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "ChildComponent",
+        "file": "routing/child/child.component.ts",
+        "selector": "app-child",
+        "providers": [],
+        "templateUrl": [
+          "child.component.html"
+        ],
+        "styleUrls": [
+          "child.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 56,
+            "end": 80,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 56,
+              "end": 67,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 68,
+              "end": 80,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-child"
+            }
+          },
+          {
+            "pos": 81,
+            "end": 121,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 81,
+              "end": 95,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 96,
+              "end": 121,
+              "flags": 0,
+              "kind": 9,
+              "text": "./child.component.html"
+            }
+          },
+          {
+            "pos": 122,
+            "end": 162,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 122,
+              "end": 134,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 135,
+              "end": 162,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 137,
+                  "end": 161,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./child.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "AnimationsComponent",
+        "file": "routing/animations/animations.component.ts",
+        "selector": "app-animations",
+        "providers": [],
+        "templateUrl": [
+          "animations.component.html"
+        ],
+        "styleUrls": [
+          "animations.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 153,
+            "end": 182,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 153,
+              "end": 164,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 165,
+              "end": 182,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-animations"
+            }
+          },
+          {
+            "pos": 183,
+            "end": 228,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 183,
+              "end": 197,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 198,
+              "end": 228,
+              "flags": 0,
+              "kind": 9,
+              "text": "./animations.component.html"
+            }
+          },
+          {
+            "pos": 229,
+            "end": 274,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 229,
+              "end": 241,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 242,
+              "end": 274,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 244,
+                  "end": 273,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./animations.component.scss"
+                }
+              ]
+            }
+          },
+          {
+            "pos": 275,
+            "end": 308,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 275,
+              "end": 288,
+              "flags": 0,
+              "escapedText": "animations"
+            },
+            "initializer": {
+              "pos": 289,
+              "end": 308,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 291,
+                  "end": 307,
+                  "flags": 0,
+                  "escapedText": "routerTransition"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "RouteOneComponent",
+        "file": "animations/route-one/route-one.component.ts",
+        "selector": "app-route-one",
+        "providers": [],
+        "templateUrl": [
+          "route-one.component.html"
+        ],
+        "styleUrls": [
+          "route-one.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 56,
+            "end": 84,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 56,
+              "end": 67,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 68,
+              "end": 84,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-route-one"
+            }
+          },
+          {
+            "pos": 85,
+            "end": 129,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 85,
+              "end": 99,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 100,
+              "end": 129,
+              "flags": 0,
+              "kind": 9,
+              "text": "./route-one.component.html"
+            }
+          },
+          {
+            "pos": 130,
+            "end": 174,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 130,
+              "end": 142,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 143,
+              "end": 174,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 145,
+                  "end": 173,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./route-one.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "RouteTwoComponent",
+        "file": "animations/route-two/route-two.component.ts",
+        "selector": "app-route-two",
+        "providers": [],
+        "templateUrl": [
+          "route-two.component.html"
+        ],
+        "styleUrls": [
+          "route-two.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 56,
+            "end": 84,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 56,
+              "end": 67,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 68,
+              "end": 84,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-route-two"
+            }
+          },
+          {
+            "pos": 85,
+            "end": 129,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 85,
+              "end": 99,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 100,
+              "end": 129,
+              "flags": 0,
+              "kind": 9,
+              "text": "./route-two.component.html"
+            }
+          },
+          {
+            "pos": 130,
+            "end": 174,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 130,
+              "end": 142,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 143,
+              "end": 174,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 145,
+                  "end": 173,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./route-two.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "name": "CommonModule"
+      },
+      {
+        "name": "RoutingRoutingModule"
+      },
+      {
+        "name": "BrowserAnimationsModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 594,
+        "end": 667,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 594,
+          "end": 604,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 605,
+          "end": 667,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 607,
+              "end": 619,
+              "flags": 0,
+              "escapedText": "CommonModule"
+            },
+            {
+              "pos": 620,
+              "end": 641,
+              "flags": 0,
+              "escapedText": "RoutingRoutingModule"
+            },
+            {
+              "pos": 642,
+              "end": 666,
+              "flags": 0,
+              "escapedText": "BrowserAnimationsModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 668,
+        "end": 778,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 668,
+          "end": 683,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 684,
+          "end": 778,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 686,
+              "end": 702,
+              "flags": 0,
+              "escapedText": "RoutingComponent"
+            },
+            {
+              "pos": 703,
+              "end": 718,
+              "flags": 0,
+              "escapedText": "ChildComponent"
+            },
+            {
+              "pos": 719,
+              "end": 739,
+              "flags": 0,
+              "escapedText": "AnimationsComponent"
+            },
+            {
+              "pos": 740,
+              "end": 758,
+              "flags": 0,
+              "escapedText": "RouteOneComponent"
+            },
+            {
+              "pos": 759,
+              "end": 777,
+              "flags": 0,
+              "escapedText": "RouteTwoComponent"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "SharedModule",
+    "file": "app/shared/shared.module.ts",
+    "providers": [
+      {
+        "name": "UtilService"
+      }
+    ],
+    "declarations": [],
+    "imports": [
+      {
+        "ns": "MarkdownModule",
+        "name": "MarkdownModule.forRoot()"
+      }
+    ],
+    "exports": [
+      {
+        "name": "CommonModule"
+      },
+      {
+        "name": "MarkdownModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 204,
+        "end": 242,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 204,
+          "end": 214,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 215,
+          "end": 242,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 217,
+              "end": 241,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 217,
+                "end": 239,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 217,
+                  "end": 231,
+                  "flags": 0,
+                  "escapedText": "MarkdownModule"
+                },
+                "name": {
+                  "pos": 232,
+                  "end": 239,
+                  "flags": 0,
+                  "escapedText": "forRoot"
+                }
+              },
+              "arguments": []
+            }
+          ]
+        }
+      },
+      {
+        "pos": 243,
+        "end": 262,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 243,
+          "end": 258,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 259,
+          "end": 262,
+          "flags": 0,
+          "kind": 182,
+          "elements": []
+        }
+      },
+      {
+        "pos": 263,
+        "end": 290,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 263,
+          "end": 275,
+          "flags": 0,
+          "escapedText": "providers"
+        },
+        "initializer": {
+          "pos": 276,
+          "end": 290,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 278,
+              "end": 289,
+              "flags": 0,
+              "escapedText": "UtilService"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 291,
+        "end": 333,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 291,
+          "end": 301,
+          "flags": 0,
+          "escapedText": "exports"
+        },
+        "initializer": {
+          "pos": 302,
+          "end": 333,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 304,
+              "end": 316,
+              "flags": 0,
+              "escapedText": "CommonModule"
+            },
+            {
+              "pos": 317,
+              "end": 332,
+              "flags": 0,
+              "escapedText": "MarkdownModule"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "StoreModule",
+    "file": "app/store/store.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "StoreComponent",
+        "file": "app/store/store.component.ts",
+        "selector": "app-store",
+        "providers": [],
+        "templateUrl": [
+          "store.component.html"
+        ],
+        "styleUrls": [
+          "store.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 64,
+            "end": 88,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 64,
+              "end": 75,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 76,
+              "end": 88,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-store"
+            }
+          },
+          {
+            "pos": 89,
+            "end": 129,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 89,
+              "end": 103,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 104,
+              "end": 129,
+              "flags": 0,
+              "kind": 9,
+              "text": "./store.component.html"
+            }
+          },
+          {
+            "pos": 130,
+            "end": 170,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 130,
+              "end": 142,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 143,
+              "end": 170,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 145,
+                  "end": 169,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./store.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "name": "CommonModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 154,
+        "end": 188,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 154,
+          "end": 164,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 165,
+          "end": 188,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 167,
+              "end": 184,
+              "flags": 0,
+              "escapedText": "CommonModule"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 189,
+        "end": 222,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 189,
+          "end": 204,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 205,
+          "end": 222,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 207,
+              "end": 221,
+              "flags": 0,
+              "escapedText": "StoreComponent"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "WildcardRoutingModule",
+    "file": "app/wildcard-routing/wildcard-routing.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "NotFoundComponent",
+        "file": "wildcard-routing/not-found/not-found.component.ts",
+        "selector": "app-not-found",
+        "providers": [],
+        "templateUrl": [
+          "not-found.component.html"
+        ],
+        "styleUrls": [
+          "not-found.component.scss"
+        ],
+        "__raw": [
+          {
+            "pos": 56,
+            "end": 84,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 56,
+              "end": 67,
+              "flags": 0,
+              "escapedText": "selector"
+            },
+            "initializer": {
+              "pos": 68,
+              "end": 84,
+              "flags": 0,
+              "kind": 9,
+              "text": "app-not-found"
+            }
+          },
+          {
+            "pos": 85,
+            "end": 129,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 85,
+              "end": 99,
+              "flags": 0,
+              "escapedText": "templateUrl"
+            },
+            "initializer": {
+              "pos": 100,
+              "end": 129,
+              "flags": 0,
+              "kind": 9,
+              "text": "./not-found.component.html"
+            }
+          },
+          {
+            "pos": 130,
+            "end": 174,
+            "flags": 0,
+            "kind": 269,
+            "name": {
+              "pos": 130,
+              "end": 142,
+              "flags": 0,
+              "escapedText": "styleUrls"
+            },
+            "initializer": {
+              "pos": 143,
+              "end": 174,
+              "flags": 0,
+              "kind": 182,
+              "elements": [
+                {
+                  "pos": 145,
+                  "end": 173,
+                  "flags": 0,
+                  "kind": 9,
+                  "text": "./not-found.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forChild(args)"
+      }
+    ],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "pos": 171,
+        "end": 360,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 171,
+          "end": 181,
+          "flags": 0,
+          "escapedText": "imports"
+        },
+        "initializer": {
+          "pos": 182,
+          "end": 360,
+          "flags": 0,
+          "kind": 182,
+          "multiLine": true,
+          "elements": [
+            {
+              "pos": 184,
+              "end": 356,
+              "flags": 0,
+              "kind": 186,
+              "expression": {
+                "pos": 184,
+                "end": 210,
+                "flags": 0,
+                "kind": 184,
+                "expression": {
+                  "pos": 184,
+                  "end": 201,
+                  "flags": 0,
+                  "escapedText": "RouterModule"
+                },
+                "name": {
+                  "pos": 202,
+                  "end": 210,
+                  "flags": 0,
+                  "escapedText": "forChild"
+                }
+              },
+              "arguments": [
+                {
+                  "pos": 211,
+                  "end": 355,
+                  "flags": 0,
+                  "kind": 182,
+                  "multiLine": true,
+                  "elements": [
+                    {
+                      "pos": 212,
+                      "end": 274,
+                      "flags": 0,
+                      "kind": 183,
+                      "multiLine": true,
+                      "properties": [
+                        {
+                          "pos": 220,
+                          "end": 239,
+                          "flags": 0,
+                          "kind": 269,
+                          "name": {
+                            "pos": 220,
+                            "end": 233,
+                            "flags": 0,
+                            "escapedText": "path"
+                          },
+                          "initializer": {
+                            "pos": 234,
+                            "end": 239,
+                            "flags": 0,
+                            "kind": 9,
+                            "text": "**"
+                          }
+                        },
+                        {
+                          "pos": 240,
+                          "end": 266,
+                          "flags": 0,
+                          "kind": 269,
+                          "name": {
+                            "pos": 240,
+                            "end": 259,
+                            "flags": 0,
+                            "escapedText": "redirectTo"
+                          },
+                          "initializer": {
+                            "pos": 260,
+                            "end": 266,
+                            "flags": 0,
+                            "kind": 9,
+                            "text": "404"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "pos": 275,
+                      "end": 349,
+                      "flags": 0,
+                      "kind": 183,
+                      "multiLine": true,
+                      "properties": [
+                        {
+                          "pos": 283,
+                          "end": 303,
+                          "flags": 0,
+                          "kind": 269,
+                          "name": {
+                            "pos": 283,
+                            "end": 296,
+                            "flags": 0,
+                            "escapedText": "path"
+                          },
+                          "initializer": {
+                            "pos": 297,
+                            "end": 303,
+                            "flags": 0,
+                            "kind": 9,
+                            "text": "404"
+                          }
+                        },
+                        {
+                          "pos": 304,
+                          "end": 341,
+                          "flags": 0,
+                          "kind": 269,
+                          "name": {
+                            "pos": 304,
+                            "end": 322,
+                            "flags": 0,
+                            "escapedText": "component"
+                          },
+                          "initializer": {
+                            "pos": 323,
+                            "end": 341,
+                            "flags": 0,
+                            "escapedText": "NotFoundComponent"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "pos": 361,
+        "end": 397,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 361,
+          "end": 376,
+          "flags": 0,
+          "escapedText": "declarations"
+        },
+        "initializer": {
+          "pos": 377,
+          "end": 397,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 379,
+              "end": 396,
+              "flags": 0,
+              "escapedText": "NotFoundComponent"
+            }
+          ]
+        }
+      },
+      {
+        "pos": 398,
+        "end": 424,
+        "flags": 0,
+        "kind": 269,
+        "name": {
+          "pos": 398,
+          "end": 408,
+          "flags": 0,
+          "escapedText": "exports"
+        },
+        "initializer": {
+          "pos": 409,
+          "end": 424,
+          "flags": 0,
+          "kind": 182,
+          "elements": [
+            {
+              "pos": 411,
+              "end": 423,
+              "flags": 0,
+              "escapedText": "RouterModule"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
