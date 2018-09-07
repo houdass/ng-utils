@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { isDevMode, NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +11,10 @@ import { FirebaseModule } from './firebase/firebase.module';
 import { RoutingModule } from './routing/routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from './forms/forms.module';
+import { NgstoreModule } from './ngstore/ngstore.module';
+import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { todoReducer } from './ngstore/todo/todo.reducers';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,7 +29,10 @@ import { FormsModule } from './forms/forms.module';
     RoutingModule,
     FormsModule,
     // AnimationsModule: Lazy loaded
-    WildcardRoutingModule
+    NgstoreModule,
+    WildcardRoutingModule,
+    StoreModule.forRoot({ todo: todoReducer }),
+    isDevMode() ? StoreDevtoolsModule.instrument() : []
   ],
   providers: [],
   bootstrap: [AppComponent]

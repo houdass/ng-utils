@@ -28,5 +28,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## TODO
-
+## LazyLoad
 PreloadingStrategy
+
+## Store
+npm i -S @ngrx/store
+npm i -S  @ngrx/store-devtools
+
+# Forms 
+
+`<p *ngIf="form.controls.name.invalid">{{ nameInvalid }}</p>`
+`<p *ngIf="form.get('name').invalid>{{ nameInvalid }}</p>`
+là on voit pas la difference entre passer par le controle ou le form.get, mais avec nested forms on pourra pas y accéder, le get nous permet de récup des controls nested
+par exemple `form.get('adress.town')`
+
