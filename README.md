@@ -42,3 +42,6 @@ npm i -S  @ngrx/store-devtools
 là on voit pas la difference entre passer par le controle ou le form.get, mais avec nested forms on pourra pas y accéder, le get nous permet de récup des controls nested
 par exemple `form.get('adress.town')`
 
+# entryComponents
+Instead of having the AppComponent in a bootstrap array, rename that array to entryComponents to prevent the component from bootstrapping with the module.
+Adding component to entryComponents. This is required because our GifEngineComponent is not a part of any other component or root of angular application. We need to add the component in entryComponents so that angular compiler will compile it.
