@@ -1,6 +1,6 @@
 <ng-container *ngIf="todos$ | async as todosStore">
-  <h5>Dernière mise à jour: {{ todosStore.updateDate | date:'mediumTime' }}</h5>
-  <h5>Total des todos: {{ todosStore.todos.length }}</h5>
+  <!--<h5>Dernière mise à jour: {{ (updateDate$.async) | date:'mediumTime' }}</h5>-->
+  <h5>Total des todos: {{ todosStore.length }}</h5>
   <button class="btn btn-danger" (click)="deleteAllTodos()">
     Tout supprimer
     <span class="glyphicon glyphicon-trash"></span>

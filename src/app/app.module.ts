@@ -14,7 +14,7 @@ import { FormsModule } from './forms/forms.module';
 import { NgstoreModule } from './ngstore/ngstore.module';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { todoReducer } from './ngstore/todo/todo.reducers';
+import { reducers } from './store/app.reducers';
 
 @NgModule({
   declarations: [AppComponent],
@@ -31,7 +31,7 @@ import { todoReducer } from './ngstore/todo/todo.reducers';
     // AnimationsModule: Lazy loaded
     NgstoreModule,
     WildcardRoutingModule,
-    StoreModule.forRoot({ todo: todoReducer }),
+    StoreModule.forRoot(reducers),
     isDevMode() ? StoreDevtoolsModule.instrument() : []
   ],
   providers: [],

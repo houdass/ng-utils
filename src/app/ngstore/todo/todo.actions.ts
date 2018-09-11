@@ -13,7 +13,7 @@ export class AddTodo implements Action {
 
 export class UpdateTodo implements Action {
   readonly type = UPDATE_TODO;
-  constructor(public payload: { index: number, updatedTodo: Todo }) {}
+  constructor(public payload: { id: number; updatedTodo: Todo }) {}
 }
 
 export class DeleteTodo implements Action {

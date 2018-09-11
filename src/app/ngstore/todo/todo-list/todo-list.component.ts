@@ -1,7 +1,10 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Todo } from '../todo.model';
 import * as TodoActions from '../todo.actions';
+import * as fromTodo from '../todo.selectors';
+import { TodoState } from '../todo.reducers';
+import { tap } from 'rxjs/internal/operators';
 
 @Component({
   selector: 'app-todo-list',
@@ -13,32 +16,39 @@ export class TodoListComponent implements OnInit {
   isEdit: boolean = false;
   newTodo: string;
   index: number;
+  id: number = 2;
+  selectedTodo: Todo;
 
-  constructor(private store: Store<{ todo: { todos: Todo[], updateDate: string } }>) {}
+  constructor(private store: Store<TodoState>) {}
 
   ngOnInit(): void {
-    this.todos$ = this.store.select('todo');
+    this.todos$ = this.store.select(fromTodo.selectAll).pipe(
+      tap(a => {
+        console.log(a);
+      })
+    );
   }
 
   addTodo(newTodo: string): void {
-    const todo: Todo = new Todo(newTodo);
+    const todo: Todo = new Todo(this.id++, newTodo);
     this.store.dispatch(new TodoActions.AddTodo(todo));
   }
 
-  updateTodo(index: number, name: string): void {
+  updateTodo(todo: Todo): void {
     this.isEdit = true;
-    this.newTodo = name;
-    this.index = index;
+    this.newTodo = todo.name;
+    this.selectedTodo = todo;
   }
 
   confirmTodo(newTodoInput: string): void {
-    const updatedTodo: Todo = new Todo(newTodoInput);
-    this.store.dispatch(new TodoActions.UpdateTodo({ index: this.index, updatedTodo }));
+    this.selectedTodo.name = newTodoInput;
+
+    this.store.dispatch(new TodoActions.UpdateTodo({ id: this.selectedTodo.id, updatedTodo: this.selectedTodo }));
     this.isEdit = false;
     this.newTodo = '';
   }
 
-  deleteTodo(index: number): void {
-    this.store.dispatch(new TodoActions.DeleteTodo(index));
+  deleteTodo(todo: Todo): void {
+    this.store.dispatch(new TodoActions.DeleteTodo(todo.id));
   }
 }
