@@ -38,7 +38,9 @@ npm i -S @ngrx/entity
 Reducers specify how the application's state changes in response to actions sent to the store.
 Remember that actions only describe what happened, but don't describe how the application's state changes.
 
-
+ng config cli.defaultCollection @ngrx/schematics       
+npm i -S @ngrx/schematics                                          
+ng generate entity --name Lesson --module courses/courses.module.ts
 
 # Forms 
 
