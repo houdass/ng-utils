@@ -52,3 +52,6 @@ par exemple `form.get('adress.town')`
 # entryComponents
 Instead of having the AppComponent in a bootstrap array, rename that array to entryComponents to prevent the component from bootstrapping with the module.
 Adding component to entryComponents. This is required because our GifEngineComponent is not a part of any other component or root of angular application. We need to add the component in entryComponents so that angular compiler will compile it.
+
+
+https://stackoverflow.com/questions/48926912/angular-router-transition-animations-slide-both-left-and-right-conditionally
