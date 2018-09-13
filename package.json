@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "ghpages": "ng build --prod --base-href 'https://houdass.github.io/ng-utils/'",
+    "publish": "sudo npx ngh --dir=dist/ng-utils"
   },
   "private": true,
   "dependencies": {

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { isDevMode, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -32,7 +33,7 @@ import { reducers } from './store/app.reducers';
     NgstoreModule,
     WildcardRoutingModule,
     StoreModule.forRoot(reducers),
-    isDevMode() ? StoreDevtoolsModule.instrument() : []
+    environment.production ? [] : StoreDevtoolsModule.instrument()
   ],
   providers: [],
   bootstrap: [AppComponent]
