@@ -1,12 +1,12 @@
-import { trigger, animate, style, group, query, transition, AnimationTriggerMetadata } from '@angular/animations';
+import { trigger, animate, style, group, query, transition, state } from '@angular/animations';
 
-/* export const fade = trigger('fade', [
-   state('void', style({ opacity: 0 })),
-
-   transition('void <=> *', [animate(2000)])
-]); */
-
-export const routerTransition: AnimationTriggerMetadata = trigger('routerTransition', [
+export const fade = trigger('fade', [
+  transition('* => *', [
+    query(':enter', [style({ opacity: 0 })]),
+    query(':enter', [style({ opacity: 0 }), animate('0.5s', style({ opacity: 1 }))])
+  ])
+]);
+export const routerTransition = trigger('routerTransition', [
   transition('* <=> *', [
     query(':enter, :leave', style({ position: 'fixed', width: '100%' }), { optional: true }),
     group([
