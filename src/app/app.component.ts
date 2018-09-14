@@ -19,6 +19,5 @@ export class AppComponent {
 
   onActivate(): void {
     this.animationState = this.route.firstChild.snapshot.data['routeId'];
-    console.log(this.animationState);
   }
 }

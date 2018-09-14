@@ -16,6 +16,10 @@ export class ProgressBarComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+    this.setColor();
+  }
+
+  setColor(): void {
     if (this.progress < 20) {
       this.color = 'progress-bar-danger';
       return;
