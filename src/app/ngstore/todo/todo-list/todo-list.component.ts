@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Store } from '@ngrx/store';
+import { select, Store } from '@ngrx/store';
 import { Todo } from '../todo.model';
 import * as TodoActions from '../todo.actions';
 import * as fromTodo from '../todo.selectors';
 import { TodoState } from '../todo.reducers';
-import { tap } from 'rxjs/internal/operators';
 
 @Component({
   selector: 'app-todo-list',
@@ -22,11 +21,7 @@ export class TodoListComponent implements OnInit {
   constructor(private store: Store<TodoState>) {}
 
   ngOnInit(): void {
-    this.todos$ = this.store.select(fromTodo.selectAll).pipe(
-      tap(a => {
-        console.log(a);
-      })
-    );
+    this.todos$ = this.store.pipe(select(fromTodo.selectAll));
   }
 
   addTodo(newTodo: string): void {

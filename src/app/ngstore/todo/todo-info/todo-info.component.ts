@@ -1,11 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Store } from '@ngrx/store';
-import { Todo } from '../todo.model';
+import { select, Store } from '@ngrx/store';
 import * as TodoActions from '../todo.actions';
 
 import * as fromTodo from '../todo.selectors';
 import { TodoState } from '../todo.reducers';
-import { tap } from 'rxjs/internal/operators';
 
 @Component({
   selector: 'app-todo-info',
@@ -13,13 +11,14 @@ import { tap } from 'rxjs/internal/operators';
   styleUrls: ['./todo-info.component.scss']
 })
 export class TodoInfoComponent implements OnInit {
-  todos$: any;
+  count$: any;
   updateDate$: any;
 
   constructor(private store: Store<TodoState>) {}
 
   ngOnInit(): void {
-    this.todos$ = this.store.select(fromTodo.selectAll);
+    this.count$ = this.store.pipe(select(fromTodo.selectTotal));
+    this.updateDate$ = this.store.pipe(select(fromTodo.selectUpdateDate));
   }
 
   deleteAllTodos(): void {
