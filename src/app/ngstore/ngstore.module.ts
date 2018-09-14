@@ -5,9 +5,10 @@ import { NgstoreRoutingModule } from './ngstore-routing.module';
 import { FormsModule } from '@angular/forms';
 import { TodoListComponent } from './todo/todo-list/todo-list.component';
 import { TodoInfoComponent } from './todo/todo-info/todo-info.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-  imports: [CommonModule, NgstoreRoutingModule, FormsModule],
+  imports: [NgstoreRoutingModule, FormsModule, SharedModule],
   declarations: [NgstoreComponent, TodoListComponent, TodoInfoComponent]
 })
 export class NgstoreModule {}

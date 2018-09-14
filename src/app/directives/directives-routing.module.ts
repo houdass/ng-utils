@@ -13,6 +13,7 @@ const directivesRoutes: Routes = [
   {
     path: 'directives',
     component: DirectivesComponent,
+    data: { routeId: 2 },
     children: [
       {
         path: 'structural',

@@ -9,6 +9,7 @@ const routingRoutes: Routes = [
   {
     path: 'routing',
     component: RoutingComponent,
+    data: { routeId: 5 },
     canActivate: [RoutingGuard],
     canActivateChild: [ChildGuard],
     children: [

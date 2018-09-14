@@ -5,7 +5,8 @@ import { FirebaseComponent } from './firebase.component';
 const firebaseRoutes: Routes = [
   {
     path: 'firebase',
-    component: FirebaseComponent
+    component: FirebaseComponent,
+    data: { routeId: 4 }
   }
 ];
 @NgModule({

@@ -7,6 +7,7 @@ const componentsRoutes: Routes = [
   {
     path: 'components',
     component: ComponentsComponent,
+    data: { routeId: 3 },
     children: [
       {
         path: 'input',

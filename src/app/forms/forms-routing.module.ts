@@ -8,6 +8,7 @@ const formsRoutes: Routes = [
   {
     path: 'forms',
     component: FormsComponent,
+    data: { routeId: 6 },
     children: [
       {
         path: 'template-driven',
