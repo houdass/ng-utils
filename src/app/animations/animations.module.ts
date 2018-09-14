@@ -11,7 +11,7 @@ import { KeyframesComponent } from './keyframes/keyframes.component';
 import { UseAnimationComponent } from './use-animation/use-animation.component';
 
 @NgModule({
-  imports: [AnimationsRoutingModule, SharedModule, CommonModule],
+  imports: [AnimationsRoutingModule, SharedModule],
   declarations: [
     AnimationsComponent,
     TriggerComponent,

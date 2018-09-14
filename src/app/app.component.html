@@ -8,12 +8,13 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <a class="navbar-brand">ng-utils</a>
+      <a class="navbar-brand"><span class="glyphicon glyphicon glyphicon-education"></span><i> ng-utils</i></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-navbar-collapse">
       <ul class="nav navbar-nav">
+        <li routerLink="home" routerLinkActive="active"><a>Home</a></li>
         <li routerLink="databinding" routerLinkActive="active"><a>Databinding</a></li>
         <li routerLink="directives" routerLinkActive="active"><a>Directives</a></li>
         <li routerLink="components" routerLinkActive="active"><a>Composants</a></li>
@@ -53,8 +54,11 @@
 </nav>
 <div class="container">
   <div class="row">
-    <div class="col-sm-12" [@routerTransition]="getState(o)">
+    <!--<div class="col-sm-12" [@routerTransition]="getState(o)">
       <router-outlet #o="outlet"></router-outlet>
+    </div>-->
+    <div class="col-sm-12" [@animRoutes]="animationState">
+      <router-outlet (activate)="onActivate()"></router-outlet>
     </div>
   </div>
 </div>

@@ -1,17 +1,23 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { routerTransition } from './animations';
+import { ActivatedRoute, RouterOutlet } from '@angular/router';
+import { animRoutes } from './app.animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [routerTransition]
+  animations: [animRoutes]
 })
 export class AppComponent {
-  constructor() {}
+  animationState: number;
 
-  getState(outlet: RouterOutlet): any {
+  constructor(private route: ActivatedRoute) {}
+
+  /*getState(outlet: RouterOutlet): any {
     return outlet.isActivated ? outlet.activatedRoute : '';
+  }*/
+
+  onActivate(): void {
+    this.animationState = this.route.firstChild.snapshot.data['routeId'];
   }
 }

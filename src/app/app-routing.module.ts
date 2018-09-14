@@ -1,23 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const appRoutes: Routes = [
+const routes: Routes = [
   {
     path: '',
-    redirectTo: 'databinding',
-    pathMatch: 'full'
+    redirectTo: 'home',
+    pathMatch: 'full',
+    data: { title: 'Heroes List' }
   },
   {
     path: 'databinding',
-    loadChildren: './databinding/databinding.module#DatabindingModule'
+    loadChildren: './databinding/databinding.module#DatabindingModule',
+    data: { routeId: 1 }
   },
   {
     path: 'animations',
-    loadChildren: './animations/animations.module#AnimationsModule'
+    loadChildren: './animations/animations.module#AnimationsModule',
+    data: { routeId: 7 }
   }
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

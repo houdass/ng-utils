@@ -4,10 +4,11 @@ import { FormsComponent } from './forms.component';
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 import { ReactiveComponent } from './reactive/reactive.component';
 
-const formsRoutes: Routes = [
+const routes: Routes = [
   {
     path: 'forms',
     component: FormsComponent,
+    data: { routeId: 6 },
     children: [
       {
         path: 'template-driven',
@@ -21,7 +22,7 @@ const formsRoutes: Routes = [
   }
 ];
 @NgModule({
-  imports: [RouterModule.forChild(formsRoutes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class FormsRoutingModule {}

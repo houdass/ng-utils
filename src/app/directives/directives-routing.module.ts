@@ -9,11 +9,11 @@ import { HostbindingComponent } from './hostbinding/hostbinding.component';
 import { HostlistenerComponent } from './hostlistener/hostlistener.component';
 import { InputComponent } from './input/input.component';
 
-const directivesRoutes: Routes = [
+const routes: Routes = [
   {
     path: 'directives',
     component: DirectivesComponent,
-    data: {},
+    data: { routeId: 2 },
     children: [
       {
         path: 'structural',
@@ -47,7 +47,7 @@ const directivesRoutes: Routes = [
   }
 ];
 @NgModule({
-  imports: [RouterModule.forChild(directivesRoutes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class DirectivesRoutingModule {}
