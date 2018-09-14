@@ -6,7 +6,7 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwowayBindingComponent } from './twoway-binding/twoway-binding.component';
 
-const databindingRoutes: Routes = [
+const routes: Routes = [
   {
     path: '',
     component: DatabindingComponent,
@@ -31,7 +31,7 @@ const databindingRoutes: Routes = [
   }
 ];
 @NgModule({
-  imports: [RouterModule.forChild(databindingRoutes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class DatabindingRoutingModule {}

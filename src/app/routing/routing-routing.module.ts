@@ -5,7 +5,7 @@ import { RoutingGuard } from './routing.guard';
 import { ChildGuard } from './child/child.guard';
 import { ChildComponent } from './child/child.component';
 
-const routingRoutes: Routes = [
+const routes: Routes = [
   {
     path: 'routing',
     component: RoutingComponent,
@@ -22,7 +22,7 @@ const routingRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routingRoutes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class RoutingRoutingModule {}

@@ -8,7 +8,7 @@ import { EasingComponent } from './easing/easing.component';
 import { KeyframesComponent } from './keyframes/keyframes.component';
 import { UseAnimationComponent } from './use-animation/use-animation.component';
 
-const animationsRoutes: Routes = [
+const routes: Routes = [
   {
     path: '',
     component: AnimationsComponent,
@@ -41,7 +41,7 @@ const animationsRoutes: Routes = [
   }
 ];
 @NgModule({
-  imports: [RouterModule.forChild(animationsRoutes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class AnimationsRoutingModule {}

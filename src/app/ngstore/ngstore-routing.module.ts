@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NgstoreComponent } from './ngstore.component';
 
-const storeRoutes: Routes = [
+const routes: Routes = [
   {
     path: 'ngstore',
     component: NgstoreComponent,
@@ -10,7 +10,7 @@ const storeRoutes: Routes = [
   }
 ];
 @NgModule({
-  imports: [RouterModule.forChild(storeRoutes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class NgstoreRoutingModule {}
