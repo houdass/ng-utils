@@ -4,8 +4,7 @@ import { markdown } from './structural.markdown';
 
 @Component({
   selector: 'app-structural',
-  templateUrl: './structural.component.html',
-  styleUrls: ['./structural.component.scss']
+  templateUrl: './structural.component.html'
 })
 export class StructuralComponent {
   ngIf: string;

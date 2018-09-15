@@ -1,23 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FirebaseService } from './firebase.service';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/internal/operators';
+import { Employee } from './employee.model';
 
 @Component({
   selector: 'app-firebase',
-  templateUrl: './firebase.component.html',
-  styleUrls: ['./firebase.component.scss']
+  templateUrl: './firebase.component.html'
 })
-export class FirebaseComponent {
+export class FirebaseComponent implements OnInit {
+  isEdit: boolean = false;
+  name: string = '';
+  selectedEmployee: Employee;
   employees$: Observable<any>;
 
   constructor(private firebaseService: FirebaseService) {}
 
+  ngOnInit(): void {
+    this.getEmployees();
+  }
+
   signIn(): void {
-    this.firebaseService
-      .signIn('test@test.com', '123456')
-      .then(() => console.log('SUCCESS'))
-      .catch(() => console.log('ERROR OF LOGIN'));
+    this.firebaseService.signIn('test@test.com', '123456');
   }
 
   signOut(): void {
@@ -33,28 +37,15 @@ export class FirebaseComponent {
   }
 
   getEmployees(): void {
-    // this.employees$ = this.firebaseService.getEmployees();
-
     this.employees$ = this.firebaseService
       .getEmployeesV2()
-      .pipe(map(changes => changes.map(c => ({ key: c.payload.key, ...c.payload.val() }))));
+      .pipe(map((changes: any) => changes.map((c: any) => ({ key: c.payload.key, ...c.payload.val() }))));
   }
 
-  addEmployee(): void {
-    const employee: any = {
-      id: '5b867fc590b83acf9fbb6492',
-      isActive: false,
-      picture: 'http://placehold.it/32x32',
-      age: 27,
-      eyeColor: 'green',
-      name: 'Mcgee Holloway',
-      gender: 'male',
-      company: 'MEDIFAX',
-      email: 'mcgeeholloway@medifax.com',
-      phone: '+1 (817) 431-3428',
-      address: '200 Vermont Street, Eastvale, Northern Mariana Islands, 9359'
-    };
+  addEmployee(name: string): void {
+    const employee: Employee = { name };
     this.firebaseService.addEmployee(employee);
+    this.name = '';
   }
 
   removeEmployee(key: string): void {
@@ -62,6 +53,21 @@ export class FirebaseComponent {
   }
 
   updateEmployee(employee: any): void {
-    this.firebaseService.updateEmployee(employee);
+    this.isEdit = true;
+    this.selectedEmployee = employee;
+    this.name = employee.name;
+  }
+
+  confirmUpdateEmployee(): void {
+    this.selectedEmployee.name = this.name;
+    this.firebaseService.updateEmployee(this.selectedEmployee);
+    this.selectedEmployee = null;
+    this.isEdit = false;
+    this.name = '';
+  }
+
+  cancel(): void {
+    this.isEdit = false;
+    this.name = '';
   }
 }

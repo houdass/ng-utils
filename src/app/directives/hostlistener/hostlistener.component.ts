@@ -4,8 +4,7 @@ import { markdown } from './hostlistener.markdown';
 
 @Component({
   selector: 'app-hostlistener',
-  templateUrl: './hostlistener.component.html',
-  styleUrls: ['./hostlistener.component.scss']
+  templateUrl: './hostlistener.component.html'
 })
 export class HostlistenerComponent {
   hostbinding: string;

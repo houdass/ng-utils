@@ -4,8 +4,7 @@ import { markdown } from './hostbinding.markdown';
 
 @Component({
   selector: 'app-hostbinding',
-  templateUrl: './hostbinding.component.html',
-  styleUrls: ['./hostbinding.component.scss']
+  templateUrl: './hostbinding.component.html'
 })
 export class HostbindingComponent {
   hostbinding: string;

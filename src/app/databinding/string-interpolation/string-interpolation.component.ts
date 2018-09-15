@@ -3,8 +3,7 @@ import { UtilService } from '../../shared/services/util.service';
 
 @Component({
   selector: 'app-string-interpolation',
-  templateUrl: './string-interpolation.component.html',
-  styleUrls: ['./string-interpolation.component.scss']
+  templateUrl: './string-interpolation.component.html'
 })
 export class StringInterpolationComponent {
   html: string;

@@ -4,8 +4,7 @@ import { markdown } from './element-ref.markdown';
 
 @Component({
   selector: 'app-element-ref',
-  templateUrl: './element-ref.component.html',
-  styleUrls: ['./element-ref.component.scss']
+  templateUrl: './element-ref.component.html'
 })
 export class ElementRefComponent {
   elementRefConstructor: string;

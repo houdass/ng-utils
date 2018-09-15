@@ -2,37 +2,29 @@ import { AngularFireDatabase } from 'angularfire2/database';
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Observable } from 'rxjs';
+import { Employee } from './employee.model';
 
 @Injectable()
 export class FirebaseService {
   authState: any = null;
 
-  constructor(private afDb: AngularFireDatabase, private afa: AngularFireAuth) {
-    this.afa.authState.subscribe((auth: any) => {
+  constructor(private afDb: AngularFireDatabase, private afAuth: AngularFireAuth) {
+    this.afAuth.authState.subscribe((auth: any) => {
       this.authState = auth;
     });
   }
 
   signIn(email: string, password: string): any {
-    return this.afa.auth.signInWithEmailAndPassword(email, password).then((credential: any) => {
+    return this.afAuth.auth.signInWithEmailAndPassword(email, password).then((credential: any) => {
       console.log(credential.user);
     });
   }
 
-  signUp(email: string, password: string): any {
-    return this.afa.auth
-      .createUserWithEmailAndPassword(email, password)
-      .then((user: any) => {
-        this.authState = user;
-      })
-      .catch((error: any) => console.log(error));
-  }
-
   signOut(): any {
-    this.afa.auth.signOut();
+    this.afAuth.auth.signOut();
   }
 
-  addEmployee(employee: any): any {
+  addEmployee(employee: Employee): any {
     return this.afDb.list('/employees').push(employee);
   }
 
@@ -40,12 +32,8 @@ export class FirebaseService {
     return this.afDb.list('/employees').remove(key);
   }
 
-  updateEmployee(employee: any): any {
+  updateEmployee(employee: Employee): any {
     return this.afDb.list('/employees').update(employee.key, employee);
-  }
-
-  getEmployees(): Observable<any> {
-    return this.afDb.list('/employees').valueChanges();
   }
 
   getEmployeesV2(): Observable<any> {

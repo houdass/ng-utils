@@ -4,8 +4,7 @@ import { markdown } from './input.markdown';
 
 @Component({
   selector: 'app-input',
-  templateUrl: './input.component.html',
-  styleUrls: ['./input.component.scss']
+  templateUrl: './input.component.html'
 })
 export class InputComponent {
   inputHtml: string;

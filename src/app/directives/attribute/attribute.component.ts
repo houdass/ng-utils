@@ -4,8 +4,7 @@ import { markdown } from './attribute.markdown';
 
 @Component({
   selector: 'app-attribute',
-  templateUrl: './attribute.component.html',
-  styleUrls: ['./attribute.component.scss']
+  templateUrl: './attribute.component.html'
 })
 export class AttributeComponent {
   stringExp: string;

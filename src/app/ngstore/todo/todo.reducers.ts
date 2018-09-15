@@ -9,10 +9,10 @@ export interface TodoState extends EntityState<Todo> {
 export const todoAdapter: EntityAdapter<Todo> = createEntityAdapter<Todo>();
 
 const defaultTodos: any = {
-  ids: [1, 2],
+  ids: [0, 1],
   entities: {
-    1: new Todo(1, 'Learn Angular'),
-    2: new Todo(1, 'Learn Node.js')
+    0: new Todo(0, 'Learn Angular'),
+    1: new Todo(1, 'Learn Node.js')
   },
   updateDate: new Date()
 };

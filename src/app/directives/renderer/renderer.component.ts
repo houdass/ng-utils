@@ -4,8 +4,7 @@ import { markdown } from './renderer.markdown';
 
 @Component({
   selector: 'app-renderer',
-  templateUrl: './renderer.component.html',
-  styleUrls: ['./renderer.component.scss']
+  templateUrl: './renderer.component.html'
 })
 export class RendererComponent {
   rendererConstructor: string;

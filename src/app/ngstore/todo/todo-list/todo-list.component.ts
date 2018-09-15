@@ -7,8 +7,7 @@ import { TodoState } from '../todo.reducers';
 
 @Component({
   selector: 'app-todo-list',
-  templateUrl: './todo-list.component.html',
-  styleUrls: ['./todo-list.component.scss']
+  templateUrl: './todo-list.component.html'
 })
 export class TodoListComponent implements OnInit {
   todos$: any;
@@ -24,9 +23,10 @@ export class TodoListComponent implements OnInit {
     this.todos$ = this.store.pipe(select(fromTodo.selectAll));
   }
 
-  addTodo(newTodo: string): void {
-    const todo: Todo = new Todo(this.id++, newTodo);
+  addTodo(): void {
+    const todo: Todo = new Todo(this.id++, this.newTodo);
     this.store.dispatch(new TodoActions.AddTodo(todo));
+    this.newTodo = '';
   }
 
   updateTodo(todo: Todo): void {
@@ -35,9 +35,8 @@ export class TodoListComponent implements OnInit {
     this.selectedTodo = todo;
   }
 
-  confirmTodo(newTodoInput: string): void {
-    this.selectedTodo.name = newTodoInput;
-
+  confirmTodo(): void {
+    this.selectedTodo.name = this.newTodo;
     this.store.dispatch(new TodoActions.UpdateTodo({ id: this.selectedTodo.id, updatedTodo: this.selectedTodo }));
     this.isEdit = false;
     this.newTodo = '';

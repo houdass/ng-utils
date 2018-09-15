@@ -4,8 +4,7 @@ import { markdown } from './twoway-binding.markdown';
 
 @Component({
   selector: 'app-twoway-binding',
-  templateUrl: './twoway-binding.component.html',
-  styleUrls: ['./twoway-binding.component.scss']
+  templateUrl: './twoway-binding.component.html'
 })
 export class TwowayBindingComponent {
   twowayBinding1: string;

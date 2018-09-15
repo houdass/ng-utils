@@ -7,8 +7,7 @@ import { TodoState } from '../todo.reducers';
 
 @Component({
   selector: 'app-todo-info',
-  templateUrl: './todo-info.component.html',
-  styleUrls: ['./todo-info.component.scss']
+  templateUrl: './todo-info.component.html'
 })
 export class TodoInfoComponent implements OnInit {
   count$: any;

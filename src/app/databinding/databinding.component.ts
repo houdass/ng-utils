@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-databinding',
-  templateUrl: './databinding.component.html',
-  styleUrls: ['./databinding.component.scss']
+  templateUrl: './databinding.component.html'
 })
 export class DatabindingComponent {
   constructor() {}

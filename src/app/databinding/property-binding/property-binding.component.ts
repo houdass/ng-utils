@@ -4,8 +4,7 @@ import { markdown } from './property-binding.markdown';
 
 @Component({
   selector: 'app-property-binding',
-  templateUrl: './property-binding.component.html',
-  styleUrls: ['./property-binding.component.scss']
+  templateUrl: './property-binding.component.html'
 })
 export class PropertyBindingComponent {
   textContent: string;

@@ -1,17 +1,17 @@
 <h3>TODO List</h3>
 <div class="input-group">
-  <input class="form-control" (keyup.enter)="isEdit ? addTodo(newTodo) : confirmTodo(newTodo)" [(ngModel)]="newTodo">
+  <input class="form-control" (keyup.enter)="isEdit ? confirmTodo() : addTodo()" [(ngModel)]="newTodo">
   <div class="input-group-btn">
-    <button class="btn btn-success" (click)="addTodo(newTodo)" *ngIf="!isEdit">
+    <button class="btn btn-success" (click)="addTodo()" *ngIf="!isEdit">
       Ajouter
     </button>
-    <button class="btn btn-info" (click)="confirmTodo(newTodo)" *ngIf="isEdit">
+    <button class="btn btn-info" (click)="confirmTodo()" *ngIf="isEdit">
       Modifier
     </button>
   </div>
 </div>
 <br/>
-<div *ngFor="let todo of (todos$ | async); index as i">
+<div *ngFor="let todo of (todos$ | async);">
   {{ todo.name }}
   <div class="btn-group pull-right">
     <button class="btn btn-info btn-xs" (click)="updateTodo(todo)">
