@@ -6,16 +6,20 @@
       <div class="btn-group">
         <button (click)="signOut()" class="btn btn-warning">Sign Out</button>
       </div>
-      <div class="input-group" *ngFor="let employee of employees">
-        <label class="form-control">{{ employee.name }} </label>
-        <div class="input-group-btn">
-          <button class="btn btn-info" (click)="updateEmployee(employee)">
+      <br>
+      <br>
+      <div *ngFor="let employee of employees">
+        {{ employee.name }}
+        <div class="btn-group pull-right">
+          <button class="btn btn-info btn-xs" (click)="updateEmployee(employee)">
             <span class="glyphicon glyphicon-edit"></span>
           </button>
-          <button class="btn btn-danger" (click)="removeEmployee(employee.key)">
+          <button class="btn btn-danger btn-xs" (click)="removeEmployee(employee.key)">
             <span class="glyphicon glyphicon-trash"></span>
           </button>
         </div>
+        <br>
+        <br>
       </div>
     </div>
     <div class="col-sm-6">
