@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FirebaseService } from './firebase.service';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/internal/operators';
 import { Employee } from './employee.model';
 
 @Component({
@@ -37,9 +36,7 @@ export class FirebaseComponent implements OnInit {
   }
 
   getEmployees(): void {
-    this.employees$ = this.firebaseService
-      .getEmployeesV2()
-      .pipe(map((changes: any) => changes.map((c: any) => ({ key: c.payload.key, ...c.payload.val() }))));
+    this.employees$ = this.firebaseService.getEmployees();
   }
 
   addEmployee(name: string): void {

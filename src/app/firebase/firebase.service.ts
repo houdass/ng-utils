@@ -1,8 +1,8 @@
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { Observable } from 'rxjs';
 import { Employee } from './employee.model';
+import { map } from 'rxjs/operators';
 
 @Injectable()
 export class FirebaseService {
@@ -36,8 +36,11 @@ export class FirebaseService {
     return this.afDb.list('/employees').update(employee.key, employee);
   }
 
-  getEmployeesV2(): Observable<any> {
-    return this.afDb.list('/employees').snapshotChanges();
+  getEmployees(): any {
+    return this.afDb
+      .list('/employees')
+      .snapshotChanges()
+      .pipe(map((changes: any) => changes.map((c: any) => ({ key: c.payload.key, ...c.payload.val() }))));
   }
 
   isAuthenticated(): boolean {
